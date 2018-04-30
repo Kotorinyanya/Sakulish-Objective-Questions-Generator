@@ -92,8 +92,12 @@ class QuestionBuilder:
                         m += 1
                     choices_complete_list = NER_tags[this_NER_tag].copy()
                     if choices_complete_list.__len__() < 4:
-                        for x in NER_tags_to_append[this_NER_tag]:
-                            choices_complete_list.append(x)
+                        try:
+                            for x in NER_tags_to_append[this_NER_tag]:
+                                choices_complete_list.append(x)
+                        except:
+                            #TODO: extend NER_tags_to_append to avoid key error
+                            pass
                     try:
                         choice_A = this_tagged_word
                         choices_complete_list.remove(choice_A)
@@ -156,6 +160,6 @@ class QuestionBuilder:
 
 
 if __name__ == '__main__':
-    qe = QuestionBuilder(url='http://www.bbc.co.uk/news/business-43945254')
+    qe = QuestionBuilder(url='http://www.bbc.com/news/uk-43941624')
     subjects = qe.subjects
     print()
