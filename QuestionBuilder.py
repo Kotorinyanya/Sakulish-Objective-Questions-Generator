@@ -13,6 +13,8 @@ class QuestionBuilder:
             self.input_sentences = sum_form_file(file)
         elif string is not None:
             self.input_sentences = sum_form_string(string)
+        else
+            raise Exception("input url/file/string required!")
 
         self.NER_tags_to_append = {
             'ORGANIZATION': ['Asda', 'CMA', 'Tesco', 'Walmart', 'Sainsbury', 'Lidl', 'BBC News'],
