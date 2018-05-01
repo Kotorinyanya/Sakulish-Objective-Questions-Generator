@@ -9,7 +9,7 @@ from core import keras_models
 from core import entity_extraction
 from pycorenlp import StanfordCoreNLP
 
-from sum import *
+from Summer import *
 
 
 class NLPMainHandler:
@@ -34,7 +34,8 @@ class NLPMainHandler:
         # pre process input sentences to 'str' object
         self.plain_sentences = []
         for sentence in input_sentences:
-            self.plain_sentences.append(str(sentence._text.encode('ascii', 'ignore')))
+            plain_sentence = sentence._text.replace('\\', '').replace('\n', ' ').replace("\\\\'s", "'s") #TODO: replace "\\'s" from string
+            self.plain_sentences.append(plain_sentence)
 
         # tag input sentences by CoreNLP
         self.taggeds_sentences = []
@@ -57,7 +58,7 @@ class NLPMainHandler:
         self.non_parsed_graphs = []
         for tagged, edges in zip(self.taggeds_sentences, self.edges):
             self.non_parsed_graphs.append({'tokens': [t for t, _, _ in tagged],
-                                'edgeSet': edges})
+                                           'edgeSet': edges})
 
         # do relation extraction
         self.parsed_graphs = []
@@ -69,7 +70,6 @@ class NLPMainHandler:
 
         # build NER complete set
         self.NER_tags = self.build_ner_tagged_set(self.taggeds_sentences)
-
 
     def process_relations_from_parsed_graphs(self, parsed_graphs):
         relations = []
@@ -89,7 +89,6 @@ class NLPMainHandler:
                         right += ' ' + tokens[token_index]
                     relations.append((left, middle, right))
         return relations
-
 
     def build_ner_tagged_set(self, taggeds):
         ner_set = {}
@@ -119,7 +118,7 @@ class NLPMainHandler:
 if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
     # input_sentences = sum_form_string(text)
-    input_sentences = sum_form_url('http://www.bbc.co.uk/news/business-43945254')
+    input_sentences = sum_form_url('http://www.bbc.co.uk/news/business-43945254', sentences_cout=5)
     Re = NLPMainHandler(input_sentences)
     relations = Re.relatoins
     ner_set = Re.NER_tags

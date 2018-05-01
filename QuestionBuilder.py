@@ -1,5 +1,5 @@
 from NLPMainHandler import NLPMainHandler
-from sum import *
+from Summer import *
 
 import random
 
@@ -13,7 +13,7 @@ class QuestionBuilder:
             self.input_sentences = sum_form_file(file)
         elif string is not None:
             self.input_sentences = sum_form_string(string)
-        else
+        else:
             raise Exception("input url/file/string required!")
 
         self.NER_tags_to_append = {
