@@ -35,7 +35,7 @@ class NLPMainHandler:
         self.plain_sentences = []
         for sentence in input_sentences:
             plain_sentence = sentence._text.replace('\\', '').replace('\n', ' ').replace("\\\\'s",
-                                                                                         "'s")  # TODO: replace "\\'s" from string
+                                                                                         "'s")  # TODO: replace "\\'s"
             self.plain_sentences.append(plain_sentence)
 
         # tag input sentences by CoreNLP
