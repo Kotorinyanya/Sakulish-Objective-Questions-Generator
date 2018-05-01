@@ -1,5 +1,11 @@
 # BaiduAIProject
 
+To generate English objective questions from English materials with neural networks.
+
+## Project Precess Document
+
+[https://hackmd.io/D9C-gD16Q6yTx8PrQBR3Og](https://hackmd.io/D9C-gD16Q6yTx8PrQBR3Og)
+
 ## QeustionBuilder
 
 Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-relation-extraction) [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) [sumy](https://pypi.org/project/sumy/) 
@@ -37,7 +43,7 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
 
 ## Usage:
 
-```python
+```
 Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:14:23)
 [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
