@@ -98,7 +98,7 @@ class QuestionBuilder:
                             for x in NER_tags_to_append[this_NER_tag]:
                                 choices_complete_list.append(x)
                         except:
-                            #TODO: extend NER_tags_to_append to avoid key error
+                            # TODO: extend NER_tags_to_append to avoid key error
                             pass
                     try:
                         choice_A = this_tagged_word
