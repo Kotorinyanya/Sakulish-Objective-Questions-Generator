@@ -11,11 +11,11 @@ services:
     container_name: soq_web
     build:
       context: ./web
-    image: soq/web:0.0.1
+    image: soq/web:0.0.2
     depends_on:
       - redis
     ports:
-      - "80:10086"
+      - "10086:5000"
     volumes:
       - soq-attachment-volume:/attachments
 
