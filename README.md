@@ -27,6 +27,7 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
     ```
     java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
     ```
+4. Install [NLTK](https://www.nltk.org/install.html)
 
 ## Requirements
 
