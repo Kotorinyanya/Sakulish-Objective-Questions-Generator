@@ -17,12 +17,16 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
 
 ## Setup:
 
-1. Check out requirements and run:
-    ```pip3 install -r requirements.txt```
+1. Check out requirements and run: </br>
+    ```
+    pip3 install -r requirements.txt
+    ```
 2. Download the [glove.6B.50d.txt](http://nlp.stanford.edu/data/glove.6B.zip) put it on `resources/embeddings/glove/glove.6B.50d.txt`
 3. Download [pre-trained models](https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/data/wikipediaWikidata/EMNLP2017_DS_IG_relation_extraction_trained_models.zip) put it on `trainedmodels/`
-3. Download [CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html) and keep it running at `localhost:9000`
-    ```java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer```
+3. Download [CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html) and keep it running at `localhost:9000` </br>
+    ```
+    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+    ```
 
 ## Requirements
 
