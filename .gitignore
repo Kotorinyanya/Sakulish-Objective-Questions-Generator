@@ -1,2 +1,12 @@
-/trainedmodels
-/resources/embeddings
+# IDE Related
+.vscode
+.idea
+
+# Environment Related
+.DS_Store
+
+# Language Related
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache

@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  redis:
+    container_name: soq_redis
+    image: redis:4.0-alpine
+    expose:
+      - "6379"
+
+  web:
+    container_name: soq_web
+    build:
+      context: ./web
+    image: soq/web:0.0.1
+    depends_on:
+      - redis
+    ports:
+      - "80:10086"
+    volumes:
+      - soq-attachment-volume:/attachments
+
+volumes:
+     soq-attachment-volume: 
