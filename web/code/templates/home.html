@@ -1,0 +1,15 @@
+{% extends "framework.html" %}
+{% set active_page = "home" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1 class="display-4">Sakulish Objective Question Generator</h1>
+    <p class="lead">To generate English objective questions from English materials with neural networks.</p>
+    <hr class="my-4">
+    <p>Texts in waiting queue: <code>{{ text_queue_count }}</code></p>
+    <p>Generated in result set: <code>{{ result_set_count }}</code></p>
+    <p class="lead">
+      <a class="btn btn-success btn-lg" href="{{ url_for("feed") }}" role="button">Feed Text</a>
+      <a class="btn btn-primary btn-lg" href="{{ url_for("view_result") }}" role="button">View Generated</a>
+    </p>
+  </div>
+{% endblock %}

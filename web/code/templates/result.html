@@ -1,0 +1,97 @@
+{% extends "framework.html" %}
+{% set active_page = "result" %}
+{% block content %}
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title">
+        Generated Questions
+      </h1>
+      {% include "flash.html" %}
+      <p class="card-text">Here you view or export all generated questions in the set.</p>
+      <p>
+        <a class="btn btn-success" href="#" role="button">Export</a>
+        <a class="btn btn-danger" href="#" role="button">Delete</a>
+      </p>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">UUID</th>
+            <th scope="col">Completion Time</th>
+            <th scope="col">Operation</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for result in results %}
+            <tr>
+              <th scope="row">{{ result["rank"] }}</th>
+              <th><code>{{ result["result"]["uuid"] }}</code></th>
+              <td><code>{{ result["time"] }}</code></td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                        data-target="#{{ result["result"]["uuid"] }}-Modal">
+                  View
+                </button>
+                <button type="button" class="btn btn-success btn-sm">Export</button>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% include "pagination.html" %}
+    </div>
+  </div>
+  {% for result in results %}
+    <div class="modal fade" id="{{ result["result"]["uuid"] }}-Modal" tabindex="-1" role="dialog"
+         aria-labelledby="{{ result["result"]["uuid"] }}-ModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="{{ result["result"]["uuid"] }}-ModalLabel">
+              View: Result #{{ result["rank"] }}
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>Metadata</h1>
+            <p>Rank: <code>#{{ result["rank"] }}</code></p>
+            <p>UUID: <code>{{ result["result"]["uuid"] }}</code></p>
+            <p>Completion Time: <code>{{ result["time"] }}</code></p>
+            <h1>Text</h1>
+            <div class="text">
+              {{ result["result"]["text"]|safe }}
+            </div>
+            <h1>Questions</h1>
+            {% set question_count = [0] %}
+            {% for question in result["result"]["questions"] %}
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Question #{{ question_count[0] }}</div>
+                {% if question_count.append(question_count.pop() + 1) %}{% endif %}
+                <div class="card-body">
+                  <h5 class="card-title">{{ question["stem"] }}</h5>
+                  <ol start="0">
+                    {% for choice in question["choices"] %}
+                      <li class="card-text">{{ choice }}</li>
+                    {% endfor %}
+                  </ol>
+                  <p class="card-text"><b>Answer: {{ question["answer"] }}</b></p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Export</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
