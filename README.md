@@ -9,6 +9,9 @@ To generate English objective questions from English materials with neural netwo
 ## How to Run It with Docker
 
 !!! WARNING: docker of text_processor is BROKEN so far !!!
+
+!!! Skip this section please !!!
+
 1. Install Docker and Docker Compose.
 
 2. Prepare the environment as `README.md` in `text_processor/code` folder, so that you can run it dependently as described in readme.
@@ -24,3 +27,15 @@ After building & downloading images, the docker containers should be running.
 The steps will be much simpler when we use PaddlePaddle.
 
 Web GUI: [http://127.0.0.1:10086](http://127.0.0.1:10086)
+
+## How to Run Them without Docker Compose
+
+1. Run a Redis docker and map its port 6379 out.
+
+2. Run text processor with `python3 run.py --host <Redis Server IP> --port <Redis Port>`.
+
+3. Run web server with `python3 app.py --host <Redis Server IP> --port <Redis Port>`.
+
+ > You can get rid of docker completely by installing Redis somewhere instead of using Redis docker container.
+
+Web GUI: `http://<Web Server IP>:10086`
