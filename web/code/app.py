@@ -1,5 +1,7 @@
 import argparse
+import json
 from flask import Flask
+from flask import render_template
 from db import DB
 
 app = Flask(__name__)
@@ -20,13 +22,32 @@ def parse_arguments():
     return parser.parse_args()
 
 
-@app.route('/')
-def index():
-    return "{} texts are waiting for process &" \
-           " {} results are waiting for export.".format(
-        db.get_text_queue_count(),
-        db.get_result_set_count()
+@app.route("/feed")
+def feed():
+    return render_template("feed.html")
+
+
+@app.route("/")
+def view_index():
+    text_queue_count = db.get_text_queue_count()
+    result_set_count = db.get_result_set_count()
+    return render_template(
+        "home.html",
+        text_queue_count=text_queue_count,
+        result_set_count=result_set_count
     )
+
+
+@app.route("/result", defaults={"page": 1})
+@app.route("/result/page/<int:page>")
+def view_result(page):
+    results = db.get_results(10 * (page - 1), 10)
+    return json.dumps(results)
+
+
+@app.route("/api")
+def view_api():
+    return render_template("api.html")
 
 
 if __name__ == "__main__":

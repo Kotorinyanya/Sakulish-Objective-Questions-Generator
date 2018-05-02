@@ -1,7 +1,7 @@
 import json
 import redis
 import uuid
-from helper import timestamp
+from time import time
 
 
 class DB(object):
@@ -24,6 +24,21 @@ class DB(object):
         length = self.db.lpush("soq_texts", json.dumps(new_item))
         return length
 
+    def get_results(self, rank, count=1):
+        """
+        Fetch [count] results starting from [rank].
+        :param rank: start rank
+        :param count: items count
+        :return: results
+        """
+        raw_results = self.db.zrange("soq_results", rank, rank + count - 1, withscores=True)
+        try:
+            results = [{"timestamp": x[1], "result": json.loads(x[0].decode().replace("\n", "\\n").replace("\r", "\\r"))} for x in raw_results]
+        except Exception as e:
+            print("An error occurred while fetching results {} ~ {}".format(rank, rank + count), e)
+            return list()
+        return results
+
     def get_text_queue_count(self):
         """
         Return the length of text queue.
@@ -36,4 +51,4 @@ class DB(object):
         Return the size of result set.
         :return:
         """
-        return self.db.zcount("soq_results", 0, timestamp())
+        return self.db.zcount("soq_results", 0, time())
