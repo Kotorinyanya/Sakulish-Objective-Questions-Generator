@@ -5,7 +5,7 @@ import random
 
 
 class QuestionBuilder:
-    def __init__(self, url='', file='', string=''):
+    def __init__(self, url=None, file=None, string=None):
         # input
         if url is not None:
             self.input_sentences = sum_form_url(url)
