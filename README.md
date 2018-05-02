@@ -24,3 +24,13 @@ After building & downloading images, the docker containers should be running.
 The steps will be much simpler when we use PaddlePaddle.
 
 Web GUI: [http://127.0.0.1:10086](http://127.0.0.1:10086)
+
+## How to Run Them without Docker Compose
+
+1. Run a Redis docker and map its port 6379 out.
+
+2. Run text processor with `python3 run.py --host <IP> --port <Port>`.
+
+3. Run web server with `python3 app.py --host <IP> --port <Port>`.
+
+Web GUI: `http://<web server IP>:10086`
