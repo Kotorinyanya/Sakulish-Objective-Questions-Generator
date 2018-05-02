@@ -2,6 +2,8 @@ import json
 import redis
 import uuid
 from time import time
+from helper import datetime
+from helper import counter
 
 
 class DB(object):
@@ -13,16 +15,17 @@ class DB(object):
         Feed a text into to-do queue manually.
         :param text: text to process
         :param uid: UUID of text
-        :return: length of queue
+        :return: UUID of text
         """
         new_item = dict()
         # If UUID not specified, generate one.
         if not uid:
             uid = uuid.uuid1()
-        new_item["uuid"] = str(uid)
+        uid = str(uid)
+        new_item["uuid"] = uid
         new_item["text"] = text
-        length = self.db.lpush("soq_texts", json.dumps(new_item))
-        return length
+        self.db.lpush("soq_texts", json.dumps(new_item))
+        return uid
 
     def get_results(self, rank, count=1):
         """
@@ -31,9 +34,17 @@ class DB(object):
         :param count: items count
         :return: results
         """
+        rank_counter = counter(rank)
         raw_results = self.db.zrange("soq_results", rank, rank + count - 1, withscores=True)
         try:
-            results = [{"timestamp": x[1], "result": json.loads(x[0].decode().replace("\n", "\\n").replace("\r", "\\r"))} for x in raw_results]
+            results = [
+                {
+                    "rank": rank_counter(),
+                    "time": datetime(x[1]),
+                    "result": json.loads(x[0].decode().replace("\n", "\\n").replace("\r", "\\r"))
+                }
+                for x in raw_results
+            ]
         except Exception as e:
             print("An error occurred while fetching results {} ~ {}".format(rank, rank + count), e)
             return list()

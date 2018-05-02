@@ -1,10 +1,16 @@
 import argparse
-import json
+import os
 from flask import Flask
+from flask import flash
+from flask import request
 from flask import render_template
+from flask import abort
 from db import DB
+from helper import paginate
+from helper import text_to_html
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.urandom(24)
 
 
 def parse_arguments():
@@ -22,8 +28,19 @@ def parse_arguments():
     return parser.parse_args()
 
 
-@app.route("/feed")
+@app.route("/feed", methods=["GET", "POST"])
 def feed():
+    if request.method == "POST":
+        # Push the text to queue.
+        try:
+            text = request.form["text"]
+            uid = db.feed_text(text)
+        except Exception as e:
+            err = "An error occurred while pushing to queue: {}".format(e)
+            print(err)
+            flash(err, "danger")
+        else:
+            flash("Success! New Text UUID: {}".format(uid), "success")
     return render_template("feed.html")
 
 
@@ -41,8 +58,22 @@ def view_index():
 @app.route("/result", defaults={"page": 1})
 @app.route("/result/page/<int:page>")
 def view_result(page):
+    page_count = (db.get_result_set_count() + 9) // 10
+    if page < 1 or page > page_count:
+        abort(404)
+    pages = paginate(
+        page,
+        page_count,
+        "/result/page/"
+    )
     results = db.get_results(10 * (page - 1), 10)
-    return json.dumps(results)
+    for result in results:
+        result["result"]["text"] = text_to_html(result["result"]["text"])
+    return render_template(
+        "result.html",
+        results=results,
+        pages=pages
+    )
 
 
 @app.route("/api")

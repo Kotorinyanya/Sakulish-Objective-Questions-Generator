@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 /*
-* The common things
-*/
+ * The common things
+ */
 
 body {
     color: #222;
@@ -16,8 +16,23 @@ hr {
 }
 
 /*
-* The border things
-*/
+ * The text things
+ */
+
+.text {
+    background-color: #F3F3F3;
+    padding: 1rem;
+}
+
+.text p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+/*
+ * The border things
+ */
 
 .top-border-red {
     border-top: 5px solid #FF7373;
