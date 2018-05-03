@@ -160,7 +160,6 @@ class QuestionBuilder:
         subjects_complete_list.append(subject)
         return subjects_complete_list
 
-
 if __name__ == '__main__':
     qe = QuestionBuilder(url='http://www.bbc.com/news/uk-43941624')
     subjects = qe.subjects
