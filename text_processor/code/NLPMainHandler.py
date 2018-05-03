@@ -11,6 +11,7 @@ from pycorenlp import StanfordCoreNLP
 
 from Summer import *
 
+from Paraphraser import Paraphraser
 
 class NLPMainHandler:
 
@@ -34,13 +35,17 @@ class NLPMainHandler:
         # pre process input sentences to 'str' object
         self.plain_sentences = []
         for sentence in input_sentences:
-            plain_sentence = sentence._text.replace('\\', '').replace('\n', ' ').replace("\\\\'s",
-                                                                                         "'s")  # TODO: replace "\\'s"
+            plain_sentence = sentence._text.replace('\\', '').replace('\n', ' ').replace("\\\\'s", "'s")  # TODO: replace "\\'s"
             self.plain_sentences.append(plain_sentence)
+
+        # paraphrase the sentence
+        self.paraphraser = Paraphraser()
+        self.paraphrased_sentences = self.paraphraser.paraphrase(self.plain_sentences)
+
 
         # tag input sentences by CoreNLP
         self.taggeds_sentences = []
-        for sentence in self.plain_sentences:
+        for sentence in self.paraphrased_sentences:
             corenlp_output = \
                 self.corenlp.annotate(sentence, properties=self.corenlp_properties).get("sentences", [])[0]
             self.taggeds_sentences.append([(t['originalText'], t['ner'], t['pos']) for t in corenlp_output['tokens']])
