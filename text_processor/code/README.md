@@ -12,6 +12,7 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
 |  NLPMainHandler.py   |        NLP main process        |
 |  QuestionBuilder.py  |         Build subjects         |
 |      Summer.py       |              Sumy              |
+|    Paraphraser.py    |          Paraphraser           |
 
 ## Setup:
 
