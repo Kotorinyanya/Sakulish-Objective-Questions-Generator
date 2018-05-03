@@ -86,7 +86,7 @@ class NLPMainHandler:
                 continue
             edge_set = parsed_graph['edgeSet']
             for relation in edge_set:
-                if relation['kbID'] != 'P0' and relation['left'] != [0] and relation['right'] != [0]:
+                if relation['kbID'] != 'P0' and relation['kbID'] != 'P31' and relation['left'] != [0] and relation['right'] != [0]:
                     left, middle, right = '', '', ''
                     for token_index in relation['left']:
                         left += tokens[token_index] + ' '
