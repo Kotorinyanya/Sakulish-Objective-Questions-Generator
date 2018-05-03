@@ -26,7 +26,7 @@ class Paraphraser:
 
     def decode(self, input_text):
         """
-        Decode text by
+        Decode text by Google Translate un-official API
         :param input_text:
         :return:
         """
@@ -36,7 +36,7 @@ class Paraphraser:
 
     def encode(self, input_text):
         """
-        Encode text by Baidu Translate API.
+        Encode text by Baidu Translate official API.
         :param input_text:
         :return:
         """
