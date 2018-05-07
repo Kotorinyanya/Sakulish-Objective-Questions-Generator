@@ -3,6 +3,7 @@ import http.client
 import hashlib
 from urllib import parse
 import random
+import codecs
 from googletrans import Translator
 
 
@@ -16,10 +17,22 @@ class Paraphraser:
             'translate.google.cn'
         ])
 
-    def paraphrase(self, input_passage):
-        encoded = self.encode(input_passage)
-        decoded = self.decode(encoded)
-        return decoded
+    def paraphrase_sentence_list(self, input_text_list):
+        encoded_list, decoded_list = [], []
+        for text in input_text_list:
+            if len(text) <= 3500:
+                encoded_list.append(self.encode(text))
+        for text in encoded_list:
+            if len(text) <= 3500:
+                decoded_list.append(self.decode(text))
+        return decoded_list
+
+    def paraphrase_passage(self, input_file):
+        with codecs.open(input_file, 'r', encoding='utf-8') as infile:
+            original_passage = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
+        paraphrased_lines = self.paraphrase_sentence_list(original_passage)
+        paraphrased_passage = ' '.join(paraphrased_lines)
+        return paraphrased_passage
 
     def decode(self, input_text):
         """
@@ -65,5 +78,5 @@ class Paraphraser:
 
 if __name__ == '__main__':
     p = Paraphraser()
-    print(p.decode('谷歌比百度快。'))
+    p.paraphrase_passage('/Users/srt_kid/Desktop/Untitled.txt')
     print()
