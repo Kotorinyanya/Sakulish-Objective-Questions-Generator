@@ -52,9 +52,57 @@ Parameters: {'rnn1_layers': 1, 'bidirectional': False, 'units1': 256, 'dropout1'
 100%|###########################################| 3/3 [00:00<00:00, 3370.72it/s]
 0it [00:00, ?it/s]
 >>> q.subjects
-[{'question': 'What is the possible relationship between Harry  and  Meghan Markle can you infer from the passage?', 'choices': ['cast member', 'instance of', 'place of birth', 'subclass of'], 'answer': 'A'}, 
- ...
- {'question': "ImagesImage caption _______ Harry and Meghan Markle will be married by the Archbishop of Canterbury on 19 May The BBC has waived the TV licence fee for communities wanting to watch Prince Harry and Meghan Markle 's wedding ", 'choices': ['Prince', 'spokesman', 'Rev', 'Archbishop'], 'answer': 'A'}, 
- ...
- {'question': 'What is the main idea of this passage?', 'choices': ["Image copyrightAFP/Getty ImagesImage caption Prince Harry and Meghan Markle will be married by the Archbishop of Canterbury on 19 May The BBC has waived the TV licence fee for communities wanting to watch Prince Harry and Meghan Markle's wedding.", '"The BBC considers that the royal wedding is such an event."', 'Usually a premises must be covered by a TV licence for showing live TV or iPlayer, but this can be waived in exceptional circumstances.', 'For those communities interested in watching the FA Cup final, which will be broadcast on BBC One at 17:15 BST, a BBC Press Office spokesman said:'], 'answer': 'A'}]
+{
+  "RelationQuestions": [
+    {
+      "question": "What is the possible relationship between side door  and  car can you infer from the passage?",
+      "choices": [
+        "part of",
+        "subclass of",
+        "depicts",
+        "sidekick of"
+      ],
+      "answer": "A"
+    },
+    ...
+  ],
+  "NerQuestions": [
+    {
+      "question": "The _______ slid open the side door of the car . ",
+      "choices": [
+        "porter",
+        "shepherd",
+        "River",
+        "pilot"
+      ],
+      "answer": "A"
+    },
+    ...
+  ],
+  "TextRankQuestions": [
+    {
+      "question": "What is the main idea of this passage?",
+      "choices": [
+        "The porter slid open the side door of the car.",
+        "He was so devastated that he was completely muddled by mud.",
+        "He no longer likes to show off dog shows on the riverside.",
+        "The dog squatted on the floor and the tail stirred the leaves."
+      ],
+      "answer": "A"
+    }
+  ],
+  "CoreferenceQuestions": [
+    {
+      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of <u>his</u>_<u>chain</u> , she had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"his chain\" mention in this sentence?",
+      "choices": [
+        "the taut chain",
+        "his tail",
+        "their",
+        "The Jersey kennels of George Devant"
+      ],
+      "answer": "A"
+    },
+    ...
+  ]
+}
 ```
