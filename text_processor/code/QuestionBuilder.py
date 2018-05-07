@@ -195,18 +195,22 @@ class QuestionBuilder:
         return subjects_complete_list
 
     def build_question_by_main_idea(self, string):
-        summary_sentences = sum_from_string(string)
         subjects_complete_list = []
+
+        summary_sentences = sum_from_string(string)
+        choices_complete_list = []
+        for summary_sentence in summary_sentences:
+            choices_complete_list.append(summary_sentence._text)
         question = 'What is the main idea of this passage?'
         try:
-            choice_A = summary_sentences[0]
-            summary_sentences.remove(choice_A)
-            choice_B = random.choice(summary_sentences)
-            summary_sentences.remove(choice_B)
-            choice_C = random.choice(summary_sentences)
-            summary_sentences.remove(choice_C)
-            choice_D = random.choice(summary_sentences)
-            summary_sentences.remove(choice_D)
+            choice_A = choices_complete_list[0]
+            choices_complete_list.remove(choice_A)
+            choice_B = random.choice(choices_complete_list)
+            choices_complete_list.remove(choice_B)
+            choice_C = random.choice(choices_complete_list)
+            choices_complete_list.remove(choice_C)
+            choice_D = random.choice(choices_complete_list)
+            choices_complete_list.remove(choice_D)
             subject = {
                 'question': question,
                 'choices': [choice_A, choice_B, choice_C, choice_D],
