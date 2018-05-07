@@ -40,7 +40,7 @@ class QuestionBuilder:
         subjects_textrank = self.build_question_by_main_idea(self.input_file)
 
         # build subject by Coreference
-        subjects_coreference = self.build_question_by_coreference(self.nlp_handler.tagged_coreference, self.nlp_handler.original_sentences)
+        subjects_coreference = self.build_question_by_coreference(self.nlp_handler.original_tagged_coreference, self.nlp_handler.original_sentences)
 
         subjects = {
             'RelationQuestions': subjects_relation,

@@ -18,11 +18,12 @@ from Paraphraser import Paraphraser
 
 class NLPMainHandler:
 
-    def __init__(self, file):
+    def __init__(self, input_file):
         """
         Input sentences were supposed to be a list of NLTK 'Sentence' objects
-        :param file: Input file, the passage
+        :param input_file: Input file, the passage
         """
+        self.input_file = input_file
         # run Stanford CoreNLP server at localhost:9000
         # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
         self.corenlp = StanfordCoreNLP('http://localhost:9000')
@@ -32,7 +33,7 @@ class NLPMainHandler:
         }
 
         # get input sentences and the whole passage
-        with codecs.open(file, 'r', encoding='utf-8') as infile:
+        with codecs.open(self.input_file, 'r', encoding='utf-8') as infile:
             self.original_passage = ' '.join([line.replace('\n', '') for line in infile.readlines()])
         self.original_sentences = nltk.sent_tokenize(self.original_passage)
 
@@ -42,12 +43,16 @@ class NLPMainHandler:
 
         # paraphrase the passage
         self.paraphraser = Paraphraser()
-        self.paraphrased_sentences = self.paraphraser.paraphrase_sentence_list(self.original_sentences)
-
-        self.paraphrased_passage = ''
+        self.paraphrased_passage = self.paraphraser.paraphrase_passage(self.input_file)
+        self.paraphrased_sentences = nltk.sent_tokenize(self.paraphrased_passage)
 
         # tag coreference by CoreNLP
-        self.tagged_coreference = self.corenlp.annotate(self.original_passage, properties={
+        self.original_tagged_coreference = self.corenlp.annotate(self.original_passage, properties={
+            'timeout': '60000',
+            'annotators': 'coref',
+            'outputFormat': 'json'
+        })
+        self.paraphrased_tagged_coreference = self.corenlp.annotate(self.paraphrased_passage, properties={
             'timeout': '60000',
             'annotators': 'coref',
             'outputFormat': 'json'
@@ -137,7 +142,6 @@ if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
     # input_sentences = sum_form_string(text)
     Re = NLPMainHandler('/Users/srt_kid/Desktop/Untitled.txt')
-    relations = Re.valid_relatoins
     ner_set = Re.NER_tags
     tagged_sentences = Re.taggeds_sentences
     print()
