@@ -140,7 +140,7 @@ class NLPMainHandler:
 
 if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
-    # input_sentences = sum_form_string(text)
+    # input_sentences = sum_from_string(text)
     Re = NLPMainHandler('/Users/srt_kid/Desktop/Untitled.txt')
     ner_set = Re.NER_tags
     tagged_sentences = Re.taggeds_sentences

@@ -4,7 +4,7 @@ import random
 
 import nltk
 from NLPMainHandler import NLPMainHandler
-from utils import sum_form_file, underline_word
+from utils import sum_from_string, underline_word
 
 
 class QuestionBuilder:
@@ -39,7 +39,7 @@ class QuestionBuilder:
                                                                            self.nlp_handler.paraphrased_tagged_coreference[
                                                                                'corefs'])
         # build subject by TextRank
-        subjects_textrank = self.build_question_by_main_idea(self.input_file)
+        subjects_textrank = self.build_question_by_main_idea(self.nlp_handler.paraphrased_passage)
 
         # build subject by Coreference
         subjects_coreference = self.build_question_by_coreference(self.nlp_handler.original_tagged_coreference,
@@ -194,8 +194,8 @@ class QuestionBuilder:
 
         return subjects_complete_list
 
-    def build_question_by_main_idea(self, file):
-        summary_sentences = sum_form_file(file)
+    def build_question_by_main_idea(self, string):
+        summary_sentences = sum_from_string(string)
         subjects_complete_list = []
         question = 'What is the main idea of this passage?'
         try:
