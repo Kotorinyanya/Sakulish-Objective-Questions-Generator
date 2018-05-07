@@ -1,10 +1,10 @@
-from NLPMainHandler import NLPMainHandler
-from utils import sum_form_url, sum_form_file, sum_form_string, underline_word
-
-import nltk
-import random
 import codecs
 import json
+import random
+
+import nltk
+from NLPMainHandler import NLPMainHandler
+from utils import sum_form_file, underline_word
 
 
 class QuestionBuilder:
@@ -34,13 +34,16 @@ class QuestionBuilder:
 
         # build subject by NER
         subjects_ner = self.build_subject_from_NER_tag_and_tagged_sentence(self.nlp_handler.NER_tags,
-                                                                            self.nlp_handler.taggeds_sentences,
-                                                                            self.NER_tags_to_append)
+                                                                           self.nlp_handler.taggeds_sentences,
+                                                                           self.NER_tags_to_append,
+                                                                           self.nlp_handler.paraphrased_tagged_coreference[
+                                                                               'corefs'])
         # build subject by TextRank
         subjects_textrank = self.build_question_by_main_idea(self.input_file)
 
         # build subject by Coreference
-        subjects_coreference = self.build_question_by_coreference(self.nlp_handler.original_tagged_coreference, self.nlp_handler.original_sentences)
+        subjects_coreference = self.build_question_by_coreference(self.nlp_handler.original_tagged_coreference,
+                                                                  self.nlp_handler.original_sentences)
 
         subjects = {
             'RelationQuestions': subjects_relation,
@@ -85,15 +88,16 @@ class QuestionBuilder:
 
         return subjects_complete_list
 
-    def build_subject_from_NER_tag_and_tagged_sentence(NER_tags, tagged_sentences, NER_tags_to_append, coreferences):
+    def build_subject_from_NER_tag_and_tagged_sentence(self, NER_tags, tagged_sentences, NER_tags_to_append,
+                                                       coreferences):
         subjects_complete_list = []
         # for i in range(1, 5):
         #     chosen_sentence = random.choice(tagged_sentences)
         #     tagged_sentences.remove(chosen_sentence)
         #     sentences_to_use.append(chosen_sentence)
 
-        for current_sentence_i in range(0, tagged_sentence.__len__()):
-            current_sentence = tagged_sentence[current_sentence_i]
+        for current_sentence_i in range(0, tagged_sentences.__len__()):
+            current_sentence = tagged_sentences[current_sentence_i]
             current_word_i = 0
             while current_word_i < current_sentence.__len__():
                 this_ner_tag = current_sentence[current_word_i][1]
@@ -137,9 +141,6 @@ class QuestionBuilder:
                     except Exception as e:
                         print(e)
                         print('the complete set of NER tags is not enough!')
-                        print(NER_tags[this_ner_tag])
-                        print(choices_complete_list)
-                        print(choice_A)
                         break
                     question = ''
                     cursor = 0
@@ -167,22 +168,20 @@ class QuestionBuilder:
                                 for coref in corefs:
                                     if coref['sentNum'] == current_sentence_i + 1 and coref[
                                         'startIndex'] - 1 <= cursor <= \
-                                            coref['endIndex'] - 1 and coref['isRepresentativeMention'] == False \
-                                            and question_word == coref['text']:
+                                            coref['endIndex'] - 1 and coref[
+                                        'isRepresentativeMention'] == False and question_word == coref['text']:
                                         for origin in corefs:
                                             if origin['isRepresentativeMention'] == True:
                                                 replacement = origin['text']
+                                                question_word = replacement
                                                 done = True
                                                 break
-                                        question_word = replacement
                                     if done:
                                         break
                                 if done:
                                     break
                             question += question_word + ' '
                         cursor += 1
-
-                    # TODO: replace 'he she this that' according to coreference
 
                     subject = {
                         'question': question,
