@@ -85,15 +85,15 @@ class QuestionBuilder:
 
         return subjects_complete_list
 
-    def build_subject_from_NER_tag_and_tagged_sentence(self, NER_tags, tagged_sentences, NER_tags_to_append):
+    def build_subject_from_NER_tag_and_tagged_sentence(NER_tags, tagged_sentences, NER_tags_to_append, coreferences):
         subjects_complete_list = []
-        sentences_to_use = tagged_sentences
         # for i in range(1, 5):
         #     chosen_sentence = random.choice(tagged_sentences)
         #     tagged_sentences.remove(chosen_sentence)
         #     sentences_to_use.append(chosen_sentence)
 
-        for current_sentence in sentences_to_use:
+        for current_sentence_i in range(0, tagged_sentence.__len__()):
+            current_sentence = tagged_sentence[current_sentence_i]
             current_word_i = 0
             while current_word_i < current_sentence.__len__():
                 this_ner_tag = current_sentence[current_word_i][1]
@@ -157,11 +157,32 @@ class QuestionBuilder:
                             if next_cursor >= current_sentence.__len__():
                                 break
                             next_tag = current_sentence[next_cursor][1]
-                        if cursor_tagged_word != this_tagged_word:
-                            question += cursor_tagged_word + ' '
-                        elif cursor_tagged_word == this_tagged_word:
+                        if cursor_tagged_word == this_tagged_word:
                             question += '_______' + ' '
+                        elif cursor_tagged_word != this_tagged_word:
+                            # replace 'he she this that' according to coreference
+                            question_word = cursor_tagged_word
+                            for id, corefs in coreferences.items():
+                                done = False
+                                for coref in corefs:
+                                    if coref['sentNum'] == current_sentence_i + 1 and coref[
+                                        'startIndex'] - 1 <= cursor <= \
+                                            coref['endIndex'] - 1 and coref['isRepresentativeMention'] == False \
+                                            and question_word == coref['text']:
+                                        for origin in corefs:
+                                            if origin['isRepresentativeMention'] == True:
+                                                replacement = origin['text']
+                                                done = True
+                                                break
+                                        question_word = replacement
+                                    if done:
+                                        break
+                                if done:
+                                    break
+                            question += question_word + ' '
                         cursor += 1
+
+                    # TODO: replace 'he she this that' according to coreference
 
                     subject = {
                         'question': question,
