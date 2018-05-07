@@ -16,13 +16,10 @@ class Paraphraser:
             'translate.google.cn'
         ])
 
-    def paraphrase(self, input_text_list):
-        encoded_list, decoded_list = [], []
-        for text in input_text_list:
-            encoded_list.append(self.encode(text))
-        for text in encoded_list:
-            decoded_list.append(self.decode(text))
-        return decoded_list
+    def paraphrase(self, input_passage):
+        encoded = self.encode(input_passage)
+        decoded = self.decode(encoded)
+        return decoded
 
     def decode(self, input_text):
         """
