@@ -8,17 +8,20 @@ from core.parser import RelParser
 from core import keras_models
 from core import entity_extraction
 from pycorenlp import StanfordCoreNLP
+import nltk
+import codecs
 
-from Summer import *
+from utils import *
 
 from Paraphraser import Paraphraser
 
+
 class NLPMainHandler:
 
-    def __init__(self, input_sentences):
+    def __init__(self, file):
         """
         Input sentences were supposed to be a list of NLTK 'Sentence' objects
-        :param input_sentences: Input sentences were supposed to be a list of NLTK 'Sentence' objects
+        :param file: Input file, the passage
         """
         # run Stanford CoreNLP server at localhost:9000
         # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
@@ -28,26 +31,34 @@ class NLPMainHandler:
             'outputFormat': 'json'
         }
 
+        # get input sentences and the whole passage
+        with codecs.open(file, 'r', encoding='utf-8') as infile:
+            self.original_passage = ' '.join([line.replace('\n', '') for line in infile.readlines()])
+        self.original_sentences = nltk.sent_tokenize(self.original_passage)
+
         # set keras model params
         keras_models.model_params['wordembeddings'] = "resources/embeddings/glove/glove.6B.50d.txt"
         self.relparser = RelParser("model_ContextWeighted", models_foldes="trainedmodels/")
 
-        # pre process input sentences to 'str' object
-        self.plain_sentences = []
-        for sentence in input_sentences:
-            plain_sentence = sentence._text.replace('\\', '').replace('\n', ' ').replace("\\\\'s", "'s")  # TODO: replace "\\'s"
-            self.plain_sentences.append(plain_sentence)
-
-        # paraphrase the sentence
+        # paraphrase the passage
         self.paraphraser = Paraphraser()
-        self.paraphrased_sentences = self.paraphraser.paraphrase(self.plain_sentences)
+        self.paraphrased_sentences = self.paraphraser.paraphrase_sentence_list(self.original_sentences)
 
+        self.paraphrased_passage = ''
+
+        # tag coreference by CoreNLP
+        self.tagged_coreference = self.corenlp.annotate(self.original_passage, properties={
+            'timeout': '60000',
+            'annotators': 'coref',
+            'outputFormat': 'json'
+        })
 
         # tag input sentences by CoreNLP
         self.taggeds_sentences = []
         for sentence in self.paraphrased_sentences:
             corenlp_output = \
                 self.corenlp.annotate(sentence, properties=self.corenlp_properties).get("sentences", [])[0]
+            # TODO: optimazation, DO NOT require for unnecessary data.
             self.taggeds_sentences.append([(t['originalText'], t['ner'], t['pos']) for t in corenlp_output['tokens']])
 
         # extract entity fragments
@@ -72,12 +83,12 @@ class NLPMainHandler:
             self.parsed_graphs.append(self.relparser.classify_graph_relations(non_parsed_graph))
 
         # get valid relations
-        self.relatoins = self.process_relations_from_parsed_graphs(self.parsed_graphs)
+        self.valid_relations = self.get_valid_relations_from_parsed_graphs(self.parsed_graphs)
 
         # build NER complete set
         self.NER_tags = self.build_ner_tagged_set(self.taggeds_sentences)
 
-    def process_relations_from_parsed_graphs(self, parsed_graphs):
+    def get_valid_relations_from_parsed_graphs(self, parsed_graphs):
         relations = []
         for parsed_graph in parsed_graphs:
             try:
@@ -87,6 +98,7 @@ class NLPMainHandler:
             edge_set = parsed_graph['edgeSet']
             for relation in edge_set:
                 if relation['kbID'] != 'P0' and relation['kbID'] != 'P31' and relation['left'] != [0] and relation['right'] != [0]:
+                    # P0: 'O', P31: 'instance of'
                     left, middle, right = '', '', ''
                     for token_index in relation['left']:
                         left += tokens[token_index] + ' '
@@ -124,9 +136,8 @@ class NLPMainHandler:
 if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
     # input_sentences = sum_form_string(text)
-    input_sentences = sum_form_url('http://www.bbc.co.uk/news/business-43945254', sentences_cout=5)
-    Re = NLPMainHandler(input_sentences)
-    relations = Re.relatoins
+    Re = NLPMainHandler('/Users/srt_kid/Desktop/Untitled.txt')
+    relations = Re.valid_relatoins
     ner_set = Re.NER_tags
     tagged_sentences = Re.taggeds_sentences
     print()
