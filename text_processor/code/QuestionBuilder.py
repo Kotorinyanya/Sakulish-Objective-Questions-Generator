@@ -22,7 +22,7 @@ class QuestionBuilder:
         elif string is not None:
             self.nlp_handler = NLPMainHandler(string=string)
         else:
-            raise Exception("Input required!")
+            raise Exception("QuestionBuilder input required!")
 
         # build the complete set of NER tags
         with open('resources/ner_tags.json', 'r') as infile:
@@ -32,8 +32,6 @@ class QuestionBuilder:
         with codecs.open('resources/properties-with-labels.txt', encoding='utf-8') as infile:
             self._property2label = {l.split("\t")[0]: l.split("\t")[1].strip() for l in infile.readlines()}
         self.relations_to_append = [relation for relation in self._property2label.values()]
-
-        self.nlp_handler = NLPMainHandler(file)
 
         self.subjects = self.build_questions()
 
@@ -313,6 +311,9 @@ class QuestionBuilder:
 
 
 if __name__ == '__main__':
+    file = 'SampleArticle.txt'
+    with codecs.open(file, 'r') as infile:
+        pass
     qe = QuestionBuilder(file='SampleArticle.txt')
     subjects = qe.subjects
     with open('SampleQuestions.json', 'w') as outfile:

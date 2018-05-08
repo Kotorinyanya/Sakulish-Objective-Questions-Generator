@@ -41,7 +41,7 @@ class NLPMainHandler:
         elif string is not None:
             self.original_passage = string
         else:
-            raise Exception("Input required!")
+            raise Exception("NLP main handler input required!")
         self.original_sentences = nltk.sent_tokenize(self.original_passage)
 
         # paraphrase the passage
