@@ -1,9 +1,9 @@
 # -*- coding: UTF-8 -*-
-import http.client
 import hashlib
-from urllib import parse
+import http.client
 import random
-import codecs
+from urllib import parse
+
 from googletrans import Translator
 
 
@@ -27,10 +27,11 @@ class Paraphraser:
                 decoded_list.append(self.decode(text))
         return decoded_list
 
-    def paraphrase_passage(self, input_file):
-        with codecs.open(input_file, 'r', encoding='utf-8') as infile:
-            original_passage = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
-        paraphrased_lines = self.paraphrase_sentence_list(original_passage)
+    def paraphrase_passage(self, string):
+        # with codecs.open(input_file, 'r', encoding='utf-8') as infile:
+        #     sentence_list = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
+        sentence_list = string.split('\n')
+        paraphrased_lines = self.paraphrase_sentence_list(sentence_list)
         paraphrased_passage = ' '.join(paraphrased_lines)
         return paraphrased_passage
 

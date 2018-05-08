@@ -8,12 +8,15 @@ from utils import sum_from_string, underline_word
 
 
 class QuestionBuilder:
-    def __init__(self, input_file=None):
+    def __init__(self, input_file=None, input_string=None):
         # input
-        if input_file is None:
-            raise Exception("input file required!")
+        if input_file is not None:
+            self.nlp_handler = NLPMainHandler(file=input_file)
+        elif input_string is not None:
+            self.nlp_handler = NLPMainHandler(string=input_string)
+        else:
+            raise Exception("Input required!")
 
-        self.input_file = input_file
         # build the complete set of NER tags
         with open('resources/ner_tags.json', 'r') as infile:
             self.NER_tags_to_append = json.load(infile)

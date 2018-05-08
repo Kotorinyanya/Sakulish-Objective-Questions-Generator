@@ -18,12 +18,11 @@ from Paraphraser import Paraphraser
 
 class NLPMainHandler:
 
-    def __init__(self, input_file):
+    def __init__(self, file=None, string=None):
         """
         Input sentences were supposed to be a list of NLTK 'Sentence' objects
         :param input_file: Input file, the passage
         """
-        self.input_file = input_file
         # run Stanford CoreNLP server at localhost:9000
         # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
         self.corenlp = StanfordCoreNLP('http://localhost:9000')
@@ -32,19 +31,25 @@ class NLPMainHandler:
             'outputFormat': 'json'
         }
 
+
         # get input sentences and the whole passage
-        with codecs.open(self.input_file, 'r', encoding='utf-8') as infile:
-            self.original_passage = ' '.join([line.replace('\n', '') for line in infile.readlines()])
+        if file is not None:
+            with codecs.open(self.input_file, 'r', encoding='utf-8') as infile:
+                self.original_passage = ' '.join([line.replace('\n', '') for line in infile.readlines()])
+        elif string is not None:
+            self.original_passage = string
+        else:
+            raise Exception("Input required!")
         self.original_sentences = nltk.sent_tokenize(self.original_passage)
+
+        # paraphrase the passage
+        self.paraphraser = Paraphraser()
+        self.paraphrased_passage = self.paraphraser.paraphrase_passage(self.original_passage)
+        self.paraphrased_sentences = nltk.sent_tokenize(self.paraphrased_passage)
 
         # set keras model params
         keras_models.model_params['wordembeddings'] = "resources/embeddings/glove/glove.6B.50d.txt"
         self.relparser = RelParser("model_ContextWeighted", models_foldes="trainedmodels/")
-
-        # paraphrase the passage
-        self.paraphraser = Paraphraser()
-        self.paraphrased_passage = self.paraphraser.paraphrase_passage(self.input_file)
-        self.paraphrased_sentences = nltk.sent_tokenize(self.paraphrased_passage)
 
         # tag coreference by CoreNLP
         self.original_tagged_coreference = self.corenlp.annotate(self.original_passage, properties={
@@ -141,7 +146,7 @@ class NLPMainHandler:
 if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
     # input_sentences = sum_from_string(text)
-    Re = NLPMainHandler('/Users/srt_kid/Desktop/Untitled.txt')
+    Re = NLPMainHandler('SampleArticle.txt')
     ner_set = Re.NER_tags
     tagged_sentences = Re.taggeds_sentences
     print()
