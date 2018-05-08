@@ -46,7 +46,7 @@ class NLPMainHandler:
 
         # paraphrase the passage
         self.paraphraser = Paraphraser()
-        self.paraphrased_passage = self.paraphraser.paraphrase_passage(self.original_passage)
+        self.paraphrased_passage = self.paraphraser.paraphrase_passage(string=self.original_passage)
         self.paraphrased_sentences = nltk.sent_tokenize(self.paraphrased_passage)
 
         # set keras model params
