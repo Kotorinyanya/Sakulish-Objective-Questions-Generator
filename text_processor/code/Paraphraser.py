@@ -31,6 +31,8 @@ class Paraphraser:
         # with codecs.open(input_file, 'r', encoding='utf-8') as infile:
         #     sentence_list = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
         sentence_list = string.split('\n')
+        # sentence_list = sentence_list.remove('')
+        sentence_list = list(filter(lambda x: x.strip() != '', sentence_list))
         paraphrased_lines = self.paraphrase_sentence_list(sentence_list)
         paraphrased_passage = ' '.join(paraphrased_lines)
         return paraphrased_passage

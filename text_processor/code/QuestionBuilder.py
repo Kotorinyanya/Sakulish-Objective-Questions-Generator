@@ -8,12 +8,19 @@ from utils import sum_from_string, underline_word
 
 
 class QuestionBuilder:
-    def __init__(self, input_file=None, input_string=None):
+
+    def __init__(self, file=None, string=None):
+        """
+        Questiong builder based on NLP main handler.
+        The input should be either file or string
+        :param file: 
+        :param string: 
+        """
         # input
-        if input_file is not None:
-            self.nlp_handler = NLPMainHandler(file=input_file)
-        elif input_string is not None:
-            self.nlp_handler = NLPMainHandler(string=input_string)
+        if file is not None:
+            self.nlp_handler = NLPMainHandler(file=file)
+        elif string is not None:
+            self.nlp_handler = NLPMainHandler(string=string)
         else:
             raise Exception("Input required!")
 
@@ -26,7 +33,7 @@ class QuestionBuilder:
             self._property2label = {l.split("\t")[0]: l.split("\t")[1].strip() for l in infile.readlines()}
         self.relations_to_append = [relation for relation in self._property2label.values()]
 
-        self.nlp_handler = NLPMainHandler(input_file)
+        self.nlp_handler = NLPMainHandler(file)
 
         self.subjects = self.build_questions()
 
@@ -306,7 +313,7 @@ class QuestionBuilder:
 
 
 if __name__ == '__main__':
-    qe = QuestionBuilder('/Users/srt_kid/Desktop/Untitled.txt')
+    qe = QuestionBuilder(file='SampleArticle.txt')
     subjects = qe.subjects
     with open('SampleQuestions.json', 'w') as outfile:
         json.dump(subjects, outfile, indent=4)

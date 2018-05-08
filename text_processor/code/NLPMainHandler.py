@@ -20,8 +20,10 @@ class NLPMainHandler:
 
     def __init__(self, file=None, string=None):
         """
-        Input sentences were supposed to be a list of NLTK 'Sentence' objects
-        :param input_file: Input file, the passage
+        NLP main handler based on Stanford CoreNLP and emnlp2017-relation-extraction and Baidu API
+        The input should be either string or file.
+        :param file:
+        :param string:
         """
         # run Stanford CoreNLP server at localhost:9000
         # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
@@ -34,8 +36,8 @@ class NLPMainHandler:
 
         # get input sentences and the whole passage
         if file is not None:
-            with codecs.open(self.input_file, 'r', encoding='utf-8') as infile:
-                self.original_passage = ' '.join([line.replace('\n', '') for line in infile.readlines()])
+            with codecs.open(file, 'r', encoding='utf-8') as infile:
+                self.original_passage = ' '.join([line for line in infile.readlines()])
         elif string is not None:
             self.original_passage = string
         else:
@@ -146,7 +148,8 @@ class NLPMainHandler:
 if __name__ == '__main__':
     # text = 'Star Wars VII is an American space opera epic film directed by  J. J. Abrams.'
     # input_sentences = sum_from_string(text)
-    Re = NLPMainHandler('SampleArticle.txt')
+    input_string = 'The baggageman slid open the side door of the car. With a rattle of his chain Dan sprang to his feet. A big red Irish setter was Dan, of his breed sixth, and most superb, his colour wavy-bronze, his head erect and noble, his eyes eloquent with that upward-looking appeal of hunting dog to hunting man.  Cold, pine-laden air deluged the heated car and chilled his quivering nose and swelled his heaving chest. Beyond the baggageman he saw through the open door, as on a moving-picture screen, sunlit fields and sunlit woods whirling past. He began to bark at them eagerly, his eyes hungry, his tail beating against the taut chain an excited tattoo. The baggageman turned with a grin.  \n "Birds?" he said.  At the word the dog reared straight up like a maddened horse. Full-throated angry barks, interspersed with sharp, querulous yaps, filled his roaring,[Pg 2] swaying prison. How long since he had got so much as a whiff of untainted air, or a glimpse of wild fields and woods! Out there oceans of such air filled all the space between the gliding earth and the sky. Out there miles on miles of freedom were rushing forever out of his life. He began to rage, to froth at the mouth. The baggageman closed the door. \n "Hard, old scout!" The baggageman shook his head.  Resignedly the dog sank on his belly, his long body throbbing, his nose between his paws. A deep sigh puffed a little cloud of dust from the slatted floor.  Three years before he had opened his amazed puppy eyes on this man (and woman) ruled planet. An agreeable place of abode he had found it as long as he was owned by a man. The Jersey kennels of George Devant had bred him; Devant had himself overlooked his first season'
+    Re = NLPMainHandler(string=input_string)
     ner_set = Re.NER_tags
     tagged_sentences = Re.taggeds_sentences
     print()
