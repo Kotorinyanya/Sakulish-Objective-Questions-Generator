@@ -15,8 +15,7 @@ class Paraphraser:
         self.baidu_secretKey = 'IuYO63_t_xMc4h_qgTRZ'
 
         self.google_translator = Translator(service_urls=[
-            'translate.google.cn',
-            'translate.google.com'
+            'translate.google.cn'
         ])
 
     def paraphrase_sentence_list(self, input_text_list):
@@ -85,5 +84,7 @@ class Paraphraser:
 
 if __name__ == '__main__':
     p = Paraphraser()
-    p.paraphrase_passage(file='SampleArticle.txt')
+    s = '行李员滑开了汽车的侧门。Dan sprang的链子嘎嘎地响了起来。一个大的爱尔兰红骑兵是丹，他的第六个品种，最优秀的，他的颜色波浪青铜，他的头直立和高贵，他的眼睛雄辩与猎犬狩猎男子向上的吸引力。'
+    print(p.decode(s))
+    # p.paraphrase_passage(file='SampleArticle.txt')
     print()
