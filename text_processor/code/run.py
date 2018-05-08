@@ -32,18 +32,20 @@ def process(text):
     :param text:
     :return:
     """
-    questions = list()
+    questions = dict()
     q = QuestionBuilder(string=text)
-    ss = q.subjects
-    for s in ss:
-        answer_id = int(s["answer"], 36) - int("A", 36)
-        answer = s["choices"][answer_id]
-        random.shuffle(s["choices"])
-        questions.append({
-            "stem": s["question"],
-            "choices": s["choices"],
-            "answer": s["choices"].index(answer)
-        })
+    raw_list = q.subjects
+    for t, tc in raw_list.items():
+        questions[t] = list()
+        for s in tc:
+            answer_id = int(s["answer"], 36) - int("A", 36)
+            answer = s["choices"][answer_id]
+            random.shuffle(s["choices"])
+            questions[t].append({
+                "stem": s["question"],
+                "choices": s["choices"],
+                "answer": s["choices"].index(answer)
+            })
     return questions
 
 

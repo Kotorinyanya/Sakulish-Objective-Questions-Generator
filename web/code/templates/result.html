@@ -45,13 +45,14 @@
     </div>
   </div>
   {% for result in results %}
-    <div class="modal fade" id="{{ result["result"]["uuid"] }}-Modal" tabindex="-1" role="dialog"
-         aria-labelledby="{{ result["result"]["uuid"] }}-ModalLabel"
+    {% set uuid = result["result"]["uuid"] %}
+    <div class="modal fade" id="{{ uuid }}-Modal" tabindex="-1" role="dialog"
+         aria-labelledby="{{ uuid }}-ModalLabel"
          aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="{{ result["result"]["uuid"] }}-ModalLabel">
+            <h5 class="modal-title" id="{{ uuid }}-ModalLabel">
               View: Result #{{ result["rank"] }}
             </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -61,29 +62,63 @@
           <div class="modal-body">
             <h1>Metadata</h1>
             <p>Rank: <code>#{{ result["rank"] }}</code></p>
-            <p>UUID: <code>{{ result["result"]["uuid"] }}</code></p>
+            <p>UUID: <code>{{ uuid }}</code></p>
             <p>Completion Time: <code>{{ result["time"] }}</code></p>
             <h1>Text</h1>
             <div class="text">
               {{ result["result"]["text"]|safe }}
             </div>
-            <h1>Questions</h1>
-            {% set question_count = [0] %}
-            {% for question in result["result"]["questions"] %}
-              <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">Question #{{ question_count[0] }}</div>
-                {% if question_count.append(question_count.pop() + 1) %}{% endif %}
-                <div class="card-body">
-                  <h5 class="card-title">{{ question["stem"] }}</h5>
-                  <ol start="0">
-                    {% for choice in question["choices"] %}
-                      <li class="card-text">{{ choice }}</li>
-                    {% endfor %}
-                  </ol>
-                  <p class="card-text"><b>Answer: {{ question["answer"] }}</b></p>
+            <h1>All Questions</h1>
+
+            {% set question_type_count = [0] %}
+            {% for question_type in result["result"]["questions"] %}
+              {% set type_id = question_type_count[0] %}
+              <div id="all-question-collection-{{ uuid }}">
+                <div class="card">
+                  <div class="card-header" id="heading-{{ uuid }}-{{ type_id }}">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-{{ uuid }}-{{ type_id }}"
+                              aria-expanded="true" aria-controls="collapse-{{ uuid }}-{{ type_id }}">
+                        {{ question_type }}
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapse-{{ uuid }}-{{ type_id }}" class="collapse" aria-labelledby="heading-{{ uuid }}-{{ type_id }}" data-parent="#all-question-collection-{{ uuid }}">
+                    <div class="card-body">
+                      {% set question_count = [0] %}
+                      {% for question in result["result"]["questions"][question_type] %}
+                        <div class="card text-white bg-secondary mb-3">
+                          <div class="card-header">Question #{{ question_count[0] }}</div>
+                          {% if question_count.append(question_count.pop() + 1) %}{% endif %}
+                          <div class="card-body">
+                            <h5 class="card-title">{{ question["stem"] }}</h5>
+                            <ol start="0">
+                              {% set answer_count = [0] %}
+                              {% for choice in question["choices"] %}
+                                <li class="card-text">
+                                  <div
+                                      {% if answer_count[0] == question["answer"] %}
+                                        class="bg-warning"
+                                      {% endif %}
+                                  >{{ choice }}
+                                  </div>
+                                </li>
+                                {% if answer_count.append(answer_count.pop() + 1) %}{% endif %}
+                              {% endfor %}
+                            </ol>
+                            <p class="card-text"><b>Answer: {{ question["answer"] }}</b></p>
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
                 </div>
               </div>
+              {% if question_type_count.append(question_type_count.pop() + 1) %}{% endif %}
             {% endfor %}
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success">Export</button>

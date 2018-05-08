@@ -1,5 +1,6 @@
 import argparse
 import os
+import re
 from flask import Flask
 from flask import flash
 from flask import request
@@ -46,6 +47,7 @@ def feed():
 
 @app.route("/")
 def view_index():
+    # Get count for show.
     text_queue_count = db.get_text_queue_count()
     result_set_count = db.get_result_set_count()
     return render_template(
@@ -58,17 +60,28 @@ def view_index():
 @app.route("/result", defaults={"page": 1})
 @app.route("/result/page/<int:page>")
 def view_result(page):
+    # Get the page count.
     page_count = (db.get_result_set_count() + 9) // 10
-    if page < 1 or page > page_count:
+    # Range limitation.
+    if (page < 1 or page > page_count) and page_count:
         abort(404)
+    # Generate a paginate
     pages = paginate(
         page,
         page_count,
         "/result/page/"
     )
+    # Fetch results.
     results = db.get_results(10 * (page - 1), 10)
+    # Make html.
     for result in results:
         result["result"]["text"] = text_to_html(result["result"]["text"])
+        question_types = list(result["result"]["questions"].keys())
+        print(question_types)
+        for old_key in question_types:
+            new_key = " ".join(re.sub('(?!^)([A-Z][a-z]+)', r' \1', old_key).split())
+            print(old_key, "to", new_key)
+            result["result"]["questions"][new_key] = result["result"]["questions"].pop(old_key)
     return render_template(
         "result.html",
         results=results,
