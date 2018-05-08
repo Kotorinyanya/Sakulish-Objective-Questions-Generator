@@ -148,7 +148,8 @@ class QuestionBuilder:
                         choices_complete_list.remove(choice_D)
                     except Exception as e:
                         print(e)
-                        print('the complete set of NER tags is not enough!')
+                        print('The complete set of NER tags is not enough, please crawl for NER tags or you can '
+                              'ignore this message.')
                         break
                     question = ''
                     cursor = 0
@@ -247,8 +248,9 @@ class QuestionBuilder:
                     corefered_words_complete_list.append(coref['text'])
 
         # build questions
-        subjects = []
+        subjects, mentioned_word = [], {}
         for id, corefs in coreferences.items():
+            # find the mentioned word
             for coref in corefs:
                 if coref['isRepresentativeMention'] == True:
                     mentioned_word = {
@@ -256,12 +258,17 @@ class QuestionBuilder:
                         'startIndex': coref['startIndex'],
                         'endIndex': coref['endIndex']
                     }
-                    # skip words that being refered
-                    continue
-                subject = self.build_single_quetion_by_coreference(coref, original_sentences,
-                                                                   corefered_words_complete_list,
-                                                                   mentioned_word)
-                subjects.append(subject)
+                    break
+            # build questions if there is a word being mentioned
+            if mentioned_word != {}:
+                for coref in corefs:
+                    if coref['isRepresentativeMention'] == True:
+                        # skip mentioned words
+                        continue
+                    subject = self.build_single_quetion_by_coreference(coref, original_sentences,
+                                                                       corefered_words_complete_list,
+                                                                       mentioned_word)
+                    subjects.append(subject)
 
         return subjects
 
@@ -312,9 +319,9 @@ class QuestionBuilder:
 
 if __name__ == '__main__':
     file = 'SampleArticle.txt'
-    with codecs.open(file, 'r') as infile:
-        pass
-    qe = QuestionBuilder(file='SampleArticle.txt')
+    with codecs.open(file, 'r', encoding='utf-8') as infile:
+        passage = ' '.join([line for line in infile.readlines()])
+    qe = QuestionBuilder(string=passage)
     subjects = qe.subjects
     with open('SampleQuestions.json', 'w') as outfile:
         json.dump(subjects, outfile, indent=4)
