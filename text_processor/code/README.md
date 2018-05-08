@@ -24,7 +24,7 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
 3. Download [pre-trained models](https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/data/wikipediaWikidata/EMNLP2017_DS_IG_relation_extraction_trained_models.zip) put it on `trainedmodels/`
 4. Download [CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html) and keep it running at `localhost:9000` </br>
     ```
-    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 60000
     ```
     > Note: Version of Java should be no higher than 8.
 5. Install [NLTK](https://www.nltk.org/install.html)
