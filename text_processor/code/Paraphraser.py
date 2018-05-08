@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+import codecs
 import hashlib
 import http.client
 import random
@@ -14,7 +15,8 @@ class Paraphraser:
         self.baidu_secretKey = 'IuYO63_t_xMc4h_qgTRZ'
 
         self.google_translator = Translator(service_urls=[
-            'translate.google.cn'
+            'translate.google.cn',
+            'translate.google.com'
         ])
 
     def paraphrase_sentence_list(self, input_text_list):
@@ -27,10 +29,12 @@ class Paraphraser:
                 decoded_list.append(self.decode(text))
         return decoded_list
 
-    def paraphrase_passage(self, string):
-        # with codecs.open(input_file, 'r', encoding='utf-8') as infile:
-        #     sentence_list = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
-        sentence_list = string.split('\n')
+    def paraphrase_passage(self, file=None, string=None):
+        if file is not None:
+            with codecs.open(file, 'r', encoding='utf-8') as infile:
+                sentence_list = [line.replace('\n', '') for line in infile.readlines() if line.strip()]
+        elif string is not None:
+            sentence_list = string.split('\n')
         # sentence_list = sentence_list.remove('')
         sentence_list = list(filter(lambda x: x.strip() != '', sentence_list))
         paraphrased_lines = self.paraphrase_sentence_list(sentence_list)
@@ -81,5 +85,5 @@ class Paraphraser:
 
 if __name__ == '__main__':
     p = Paraphraser()
-    p.paraphrase_passage('/Users/srt_kid/Desktop/Untitled.txt')
+    p.paraphrase_passage(file='SampleArticle.txt')
     print()
