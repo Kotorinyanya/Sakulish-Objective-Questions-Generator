@@ -8,6 +8,8 @@ from db import DB
 
 from QuestionBuilder import QuestionBuilder
 import random
+import re
+import html
 
 
 def parse_arguments():
@@ -38,11 +40,16 @@ def process(text):
     for t, tc in raw_list.items():
         questions[t] = list()
         for s in tc:
+            if "answer" not in s:
+                continue
             answer_id = int(s["answer"], 36) - int("A", 36)
             answer = s["choices"][answer_id]
             random.shuffle(s["choices"])
+            stem = html.escape(s["question"])
+            stem = stem.replace("_____", " rba")
+            stem = re.sub("__(.*)__", r"<u>\1</u>", stem)
             questions[t].append({
-                "stem": s["question"],
+                "stem": stem,
                 "choices": s["choices"],
                 "answer": s["choices"].index(answer)
             })
@@ -58,7 +65,7 @@ def main():
         try:
             result = {
                 "uuid": str(uuid.uuid1()),
-                "text": task["text"],
+                "text": html.escape(task["text"]),
                 "questions": process(task["text"]),
                 "attachments": task["attachments"] if "attachments" in task else dict()
             }

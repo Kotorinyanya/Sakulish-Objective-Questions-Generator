@@ -77,7 +77,6 @@ def view_result(page):
     for result in results:
         result["result"]["text"] = text_to_html(result["result"]["text"])
         question_types = list(result["result"]["questions"].keys())
-        print(question_types)
         for old_key in question_types:
             new_key = " ".join(re.sub('(?!^)([A-Z][a-z]+)', r' \1', old_key).split())
             print(old_key, "to", new_key)

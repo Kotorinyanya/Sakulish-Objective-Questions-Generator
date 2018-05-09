@@ -37,7 +37,7 @@ def sum_from_string(string, language="english", sentences_cout=100):
 
 
 def underline_word(word):
-    underline_word = '<u>' + word + '</u>'
+    underline_word = '__' + word + '__'
     return underline_word
 
 

@@ -43,7 +43,7 @@ def text_to_html(text):
     :param text: a text
     :return: text in html format
     """
-    paragraphs = html.escape(text).split("\n")
+    paragraphs = text.split("\n")
     paragraphs = map(lambda x: x.strip(), paragraphs)
     paragraphs = map(lambda x: "<p>" + x + "</p>", paragraphs)
     return "\n".join(paragraphs)

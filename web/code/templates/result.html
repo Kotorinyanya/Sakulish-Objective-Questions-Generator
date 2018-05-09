@@ -92,7 +92,7 @@
                           <div class="card-header">Question #{{ question_count[0] }}</div>
                           {% if question_count.append(question_count.pop() + 1) %}{% endif %}
                           <div class="card-body">
-                            <h5 class="card-title">{{ question["stem"] }}</h5>
+                            <h5 class="card-title">{{ question["stem"]|safe }}</h5>
                             <ol start="0">
                               {% set answer_count = [0] %}
                               {% for choice in question["choices"] %}
