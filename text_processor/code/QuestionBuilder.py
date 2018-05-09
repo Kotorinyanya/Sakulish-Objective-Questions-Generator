@@ -268,7 +268,8 @@ class QuestionBuilder:
                     subject = self.build_single_quetion_by_coreference(coref, original_sentences,
                                                                        corefered_words_complete_list,
                                                                        mentioned_word)
-                    subjects.append(subject)
+                    if subject is not None:
+                        subjects.append(subject)
 
         return subjects
 
@@ -312,7 +313,7 @@ class QuestionBuilder:
             }
         except Exception as e:
             print('Word being mentioned by others is less than 4!')
-            return {}
+            return None
 
         return subject
 

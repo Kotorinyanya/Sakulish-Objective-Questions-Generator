@@ -26,7 +26,7 @@ class NLPMainHandler:
         :param string:
         """
         # run Stanford CoreNLP server at localhost:9000
-        # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+        # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 100000
         self.corenlp = StanfordCoreNLP('http://localhost:9000')
         self.corenlp_properties = {
             'annotators': 'tokenize, pos, ner',
