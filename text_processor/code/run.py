@@ -46,7 +46,7 @@ def process(text):
             answer = s["choices"][answer_id]
             random.shuffle(s["choices"])
             stem = html.escape(s["question"])
-            stem = stem.replace("_____", " rba")
+            stem = stem.replace("_____", " ")
             stem = re.sub("__(.*)__", r"<u>\1</u>", stem)
             questions[t].append({
                 "stem": stem,
