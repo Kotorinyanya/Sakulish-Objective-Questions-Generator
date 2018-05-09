@@ -43,6 +43,6 @@ def underline_word(word):
 
 if __name__ == "__main__":
     text_file = "document.txt"
-    keyphrases = sum_form_string(
+    keyphrases = sum_from_string(
         string='t first I was upset when they told me we were moving to some little town out in the Ozarks. I remember staring at my dinner plate while I listened to my sister throw a temper tantrum unbefitting of a 14 year old honors student. She cried, she pleaded, and then she cursed at my parents. She threw a bowl at my dad and told him it was all his fault. Mom told Whitney to calm down but she stormed off, slamming every door in the house on the way to her room.')
     print()
