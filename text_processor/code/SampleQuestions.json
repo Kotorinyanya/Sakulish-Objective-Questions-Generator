@@ -1,3650 +1,550 @@
 {
-  "RelationQuestions": [
-    {
-      "question": "What is the possible relationship between side door  and  car can you infer from the passage?",
-      "choices": [
-        "part of",
-        "subclass of",
-        "depicts",
-        "sidekick of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Dan  and  chain can you infer from the passage?",
-      "choices": [
-        "part of",
-        "original network",
-        "genre",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Dan  and  red cavalry can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "shares border with",
-        "characters",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between air  and  heated car can you infer from the passage?",
-      "choices": [
-        "part of",
-        "performer",
-        "located on astronomical body",
-        "depicts"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between eyes  and  tail can you infer from the passage?",
-      "choices": [
-        "part of",
-        "shares border with",
-        "subclass of",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  crazy horse can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "shares border with",
-        "located on astronomical body",
-        "part of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between angry squeaks  and  roaring can you infer from the passage?",
-      "choices": [
-        "part of",
-        "spouse",
-        "sport",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between roaring  and  PG can you infer from the passage?",
-      "choices": [
-        "performer",
-        "shares border with",
-        "depicts",
-        "follows"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between air  and  wilderness and the woods can you infer from the passage?",
-      "choices": [
-        "part of",
-        "original network",
-        "follows",
-        "parent astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between ocean outside  and  space can you infer from the passage?",
-      "choices": [
-        "located on astronomical body",
-        "subclass of",
-        "sport",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between miles  and  freedom can you infer from the passage?",
-      "choices": [
-        "country",
-        "place of birth",
-        "subclass of",
-        "shares border with"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between anger and his mouth  and  foam can you infer from the passage?",
-      "choices": [
-        "performer",
-        "located on astronomical body",
-        "spouse",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  stomach can you infer from the passage?",
-      "choices": [
-        "part of",
-        "located on astronomical body",
-        "sidekick of",
-        "country"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between deep sigh  and  little dust can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "place of birth",
-        "follows",
-        "part of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between little dust  and  slat floor can you infer from the passage?",
-      "choices": [
-        "part of",
-        "located on astronomical body",
-        "original network",
-        "award received"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between surprised puppy  and  planet that this man can you infer from the passage?",
-      "choices": [
-        "part of",
-        "performer",
-        "spouse",
-        "award received"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between George Devant  and  Jersey can you infer from the passage?",
-      "choices": [
-        "place of birth",
-        "original network",
-        "shares border with",
-        "parent astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between George Devant  and  kennel can you infer from the passage?",
-      "choices": [
-        "sport",
-        "subclass of",
-        "original network",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between George Devant  and  season can you infer from the passage?",
-      "choices": [
-        "award received",
-        "parent astronomical body",
-        "genre",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between George Devant  and  training can you infer from the passage?",
-      "choices": [
-        "sport",
-        "location",
-        "genre",
-        "characters"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between PG  and  smile can you infer from the passage?",
-      "choices": [
-        "characters",
-        "depicts",
-        "genre",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Lancaster  and  dog in his lap can you infer from the passage?",
-      "choices": [
-        "characters",
-        "location",
-        "located on astronomical body",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between woman  and  bird bird can you infer from the passage?",
-      "choices": [
-        "part of",
-        "sport",
-        "depicts",
-        "follows"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between unbearable burden  and  goodness can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "original network",
-        "characters",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Derwent  and  Mrs. can you infer from the passage?",
-      "choices": [
-        "spouse",
-        "parent astronomical body",
-        "performer",
-        "genre"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between remote place  and  riverside can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "country",
-        "award received",
-        "original network"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between riverside  and  apartment can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "opposite of",
-        "shares border with",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dogs  and  belts can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "genre",
-        "location",
-        "sport"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between eyes  and  freedom can you infer from the passage?",
-      "choices": [
-        "spouse",
-        "genre",
-        "opposite of",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Lancaster  and  Derwent can you infer from the passage?",
-      "choices": [
-        "shares border with",
-        "depicts",
-        "subclass of",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Lancaster  and  trip can you infer from the passage?",
-      "choices": [
-        "sidekick of",
-        "country",
-        "location",
-        "original network"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between destination  and  dirty wasteland can you infer from the passage?",
-      "choices": [
-        "genre",
-        "sport",
-        "follows",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between baggage officer  and  world can you infer from the passage?",
-      "choices": [
-        "part of",
-        "shares border with",
-        "opposite of",
-        "follows"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between door  and  floor can you infer from the passage?",
-      "choices": [
-        "location",
-        "original network",
-        "located on astronomical body",
-        "subclass of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  door can you infer from the passage?",
-      "choices": [
-        "part of",
-        "performer",
-        "characters",
-        "award received"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between bright red glow  and  forest can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "performer",
-        "depicts",
-        "characters"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Something in the distance  and  chain can you infer from the passage?",
-      "choices": [
-        "depicts",
-        "characters",
-        "spouse",
-        "sidekick of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between red light  and  desperate eyes can you infer from the passage?",
-      "choices": [
-        "part of",
-        "located on astronomical body",
-        "sport",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between collar breaks  and  tree trunk can you infer from the passage?",
-      "choices": [
-        "performer",
-        "follows",
-        "characters",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between loud roar  and  feelings of the surroundings can you infer from the passage?",
-      "choices": [
-        "follows",
-        "parent astronomical body",
-        "spouse",
-        "award received"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between standing  and  glow can you infer from the passage?",
-      "choices": [
-        "parent astronomical body",
-        "shares border with",
-        "sidekick of",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between figure  and  door can you infer from the passage?",
-      "choices": [
-        "part of",
-        "spouse",
-        "follows",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between shiny railing  and  dazzling headlight can you infer from the passage?",
-      "choices": [
-        "part of",
-        "sidekick of",
-        "location",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between sharp whistles  and  brake screams can you infer from the passage?",
-      "choices": [
-        "follows",
-        "spouse",
-        "original network",
-        "part of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between path  and  ears can you infer from the passage?",
-      "choices": [
-        "spouse",
-        "location",
-        "award received",
-        "subclass of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between huge lung  and  glow of the west can you infer from the passage?",
-      "choices": [
-        "location",
-        "spouse",
-        "award received",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between PG  and  water can you infer from the passage?",
-      "choices": [
-        "part of",
-        "characters",
-        "country",
-        "original network"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between teeth  and  chestnuts can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "award received",
-        "depicts",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between edge  and  straw field can you infer from the passage?",
-      "choices": [
-        "part of",
-        "country",
-        "place of birth",
-        "award received"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between person  and  tree can you infer from the passage?",
-      "choices": [
-        "part of",
-        "performer",
-        "award received",
-        "genre"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between hunger  and  pile can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "award received",
-        "part of",
-        "shares border with"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between wind  and  wind can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "award received",
-        "location",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Broadway  and  shop can you infer from the passage?",
-      "choices": [
-        "characters",
-        "subclass of",
-        "located on astronomical body",
-        "genre"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between hungry tramp  and  farmhouse can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "spouse",
-        "characters",
-        "located on astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between Dan  and  ferocious melee can you infer from the passage?",
-      "choices": [
-        "part of",
-        "follows",
-        "country",
-        "sidekick of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between belly in his stomach  and  log cabin can you infer from the passage?",
-      "choices": [
-        "part of",
-        "subclass of",
-        "country",
-        "original network"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between group  and  black children can you infer from the passage?",
-      "choices": [
-        "part of",
-        "performer",
-        "spouse",
-        "sidekick of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between man burst  and  door with a gun can you infer from the passage?",
-      "choices": [
-        "part of",
-        "shares border with",
-        "performer",
-        "sport"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between bullet  and  hips can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "original network",
-        "depicts",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between people  and  highways can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "genre",
-        "opposite of",
-        "sport"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog shows  and  riverside can you infer from the passage?",
-      "choices": [
-        "original network",
-        "located on astronomical body",
-        "spouse",
-        "genre"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between slight wind  and  smell of a man can you infer from the passage?",
-      "choices": [
-        "part of",
-        "sport",
-        "spouse",
-        "performer"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between heart  and  painful loneliness can you infer from the passage?",
-      "choices": [
-        "follows",
-        "sidekick of",
-        "parent astronomical body",
-        "shares border with"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog without a master  and  not enough motivation can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "spouse",
-        "part of",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between young man  and  feet can you infer from the passage?",
-      "choices": [
-        "part of",
-        "characters",
-        "sport",
-        "spouse"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between body  and  supply can you infer from the passage?",
-      "choices": [
-        "part of",
-        "characters",
-        "performer",
-        "spouse"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between PG  and  protection can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "genre",
-        "characters",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog advances  and  pleased tail can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "part of",
-        "location",
-        "shares border with"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between boy  and  horrible red face can you infer from the passage?",
-      "choices": [
-        "follows",
-        "spouse",
-        "located on astronomical body",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between stick  and  cave man can you infer from the passage?",
-      "choices": [
-        "subclass of",
-        "follows",
-        "shares border with",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between boy  and  stick can you infer from the passage?",
-      "choices": [
-        "characters",
-        "subclass of",
-        "award received",
-        "sidekick of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  eyes can you infer from the passage?",
-      "choices": [
-        "characters",
-        "country",
-        "located on astronomical body",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between chubby hands  and  tear-saturated face can you infer from the passage?",
-      "choices": [
-        "performer",
-        "award received",
-        "part of",
-        "depicts"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  floor and the tail can you infer from the passage?",
-      "choices": [
-        "part of",
-        "award received",
-        "follows",
-        "place of birth"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between boy  and  big hug can you infer from the passage?",
-      "choices": [
-        "part of",
-        "genre",
-        "located on astronomical body",
-        "opposite of"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between child in the distance  and  home can you infer from the passage?",
-      "choices": [
-        "opposite of",
-        "location",
-        "original network",
-        "parent astronomical body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between dog  and  warm body can you infer from the passage?",
-      "choices": [
-        "performer",
-        "located on astronomical body",
-        "follows",
-        "sport"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between bell  and  setting sun can you infer from the passage?",
-      "choices": [
-        "part of",
-        "genre",
-        "sidekick of",
-        "location"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between PG  and  face can you infer from the passage?",
-      "choices": [
-        "opposite of",
-        "characters",
-        "spouse",
-        "depicts"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "What is the possible relationship between boy  and  arms can you infer from the passage?",
-      "choices": [
-        "part of",
-        "characters",
-        "award received",
-        "parent astronomical body"
-      ],
-      "answer": "A"
-    }
-  ],
-  "NerQuestions": [
-    {
-      "question": "The _______ slid open the side door of the car . ",
-      "choices": [
-        "porter",
-        "shepherd",
-        "River",
-        "pilot"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ sprang chain rang loudly . ",
-      "choices": [
-        "Dan",
-        "Lancaster",
-        "Derwent",
-        "George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A large _______ red cavalry is Dan , his sixth breed , the finest , his color wavy bronze , his head upright and noble , his eyes eloquent with the hound hunting men 's upward attraction . ",
-      "choices": [
-        "Irish",
-        "pole",
-        "English",
-        "Italian"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ , pine air flooded the heated car , cooling his trembling nose and swollen his chest . ",
-      "choices": [
-        "cold",
-        "porter",
-        "owner",
-        "shepherd"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He saw the _______ from the open door , as if on a moving picture , the sun shone in the fields and the sun shone in the woods . ",
-      "choices": [
-        "porter",
-        "cold",
-        "owner",
-        "shepherd"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ grinned . ",
-      "choices": [
-        "porter",
-        "River",
-        "owner",
-        "pilot"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "It was full of angry squeaks , squeaking and screaming , full of his roaring ( PG _______ ) shaking prison . ",
-      "choices": [
-        "2",
-        "5",
-        "one",
-        "Two"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ closed the door . ",
-      "choices": [
-        "porter",
-        "shepherd",
-        "cold",
-        "butcher"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "the _______ shook his head . ",
-      "choices": [
-        "porter",
-        "River",
-        "owner",
-        "shepherd"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ , he opened his surprised puppy and looked at the planet that this man ( and woman ) ruled . ",
-      "choices": [
-        "Three years ago",
-        "the day",
-        "the third day",
-        "time"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ 's Jersey kennel nurtured him ; Derwent himself neglected his first season of training and had chased him several times . ",
-      "choices": [
-        "George Devant",
-        "Derwent",
-        "Devinte",
-        "Dan"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At the _______ of the death of the late Derwent , Mrs. Devinte sold the place , the kennel , and the mount . ",
-      "choices": [
-        "time",
-        "Three years ago",
-        "the third day",
-        "the day"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ , a single friend of the late Derwent , shouted : \" Why , I stare at him . \" ",
-      "choices": [
-        "Lancaster",
-        "Devinte",
-        "Dan",
-        "Derwent"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ PG _______ ] \" You ca n't find him , \" she said with a smile . ",
-      "choices": [
-        "3",
-        "One",
-        "6",
-        "8"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "\u201d \" He 's not a dog in his lap , \" _______ reminded her . ",
-      "choices": [
-        "Lancaster",
-        "Devinte",
-        "Derwent",
-        "George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "For Mrs. _______ , she never happened . ",
-      "choices": [
-        "Derwent",
-        "Dan",
-        "Devinte",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why they would walk their dogs and twist their belts in the _______ , staring at the hungry eyes on the cliffs of the Hudson River ",
-      "choices": [
-        "afternoon",
-        "morning",
-        "this deep night",
-        "noon"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then , _______ , who frequently called in Mrs. Derwent \u2019s apartment , borrowed him . ",
-      "choices": [
-        "Lancaster",
-        "George Devant",
-        "Dan VI",
-        "Dan"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "That _______ , Lancaster himself took him on this train ",
-      "choices": [
-        "morning",
-        "this deep night",
-        "afternoon",
-        "noon"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "On this trip , \" _______ said , \" If we do not beat him , it will be easier . ",
-      "choices": [
-        "Lancaster",
-        "Dan",
-        "George Devant",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "\" He knew all _______ that he was being thrown away . ",
-      "choices": [
-        "day",
-        "1848-1871",
-        "1837-1843",
-        "1887-1946"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ PG _______ ] The train slowed down and stopped . ",
-      "choices": [
-        "4",
-        "3",
-        "three",
-        "6"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ opened the door and fell to the floor . ",
-      "choices": [
-        "porter",
-        "butcher",
-        "shepherd",
-        "owner"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A standing black _______ blocked the glow and began to move backwards . ",
-      "choices": [
-        "pole",
-        "Canadian",
-        "English",
-        "Irish"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The _______ 's figure appeared at the door . ",
-      "choices": [
-        "porter",
-        "pilot",
-        "butcher",
-        "owner"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He landed on a shiny railing , and before a dazzling headlight , the _______ had just missed the path he had taken . ",
-      "choices": [
-        "pilot",
-        "River",
-        "owner",
-        "shepherd"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ sharp whistles from the other train , brake screams and a shout . ",
-      "choices": [
-        "Two",
-        "One",
-        "5",
-        "7"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "( PG _______ ) slamming long cold water . ",
-      "choices": [
-        "5",
-        "4",
-        "three",
-        "One"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "In _______ sky , the dog galloped through the trees and filled the bark , jumping up high into the air . ",
-      "choices": [
-        "this deep night",
-        "morning",
-        "noon",
-        "afternoon"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ person hit the tree and walked down . ",
-      "choices": [
-        "One",
-        "one",
-        "Two",
-        "5"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ jumped over him . ",
-      "choices": [
-        "Dan",
-        "Devinte",
-        "Lancaster",
-        "Derwent"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "During _______ , he had no one and no guns . ",
-      "choices": [
-        "the day",
-        "time",
-        "Three years ago",
-        "the third day"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He remembered a white-tiled _______ shop on Broadway and recalled it . ",
-      "choices": [
-        "butcher",
-        "River",
-        "pilot",
-        "shepherd"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At _______ , a hungry tramp came to a farmhouse . ",
-      "choices": [
-        "noon",
-        "afternoon",
-        "this deep night",
-        "morning"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big _______ dog met him . ",
-      "choices": [
-        "shepherd",
-        "owner",
-        "porter",
-        "butcher"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When the ferocious melee ended and the _______ retreated , Dan VI shouldered a long , deep wound . ",
-      "choices": [
-        "shepherd",
-        "River",
-        "porter",
-        "pilot"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When he turned away , a bullet stung his hips , [ PG _______ ] , and the others yelled around him . ",
-      "choices": [
-        "6",
-        "3",
-        "4",
-        "Two"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Near _______ , a slight wind blew up the smell of a man . ",
-      "choices": [
-        "the third day",
-        "Three years ago",
-        "time",
-        "the day"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A dog without a master is like an _______ : there is not enough motivation to complete his struggle and achievements . ",
-      "choices": [
-        "atheist",
-        "atheist",
-        "Jewish",
-        "Christian"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "If the dog is full of meat , if a partner runs around him , he still longs for the _______ 's face and voice . ",
-      "choices": [
-        "owner",
-        "cold",
-        "butcher",
-        "porter"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A young man , _______ feet tall , bare and frowning , stood alone in the woods . ",
-      "choices": [
-        "three",
-        "5",
-        "7",
-        "Two"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "( PG _______ ) Obviously , he got lost ; obviously , he needs protection . ",
-      "choices": [
-        "7",
-        "Two",
-        "2",
-        "5"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ knows that his wandering is over . ",
-      "choices": [
-        "Dan VI",
-        "George Devant",
-        "Derwent",
-        "Lancaster"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ suddenly jumped up . ",
-      "choices": [
-        "Dan",
-        "George Devant",
-        "Lancaster",
-        "Derwent"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "_______ sat on the horse and lifted his nose like an airplane machine gun and began to sink . ",
-      "choices": [
-        "Dan",
-        "Dan VI",
-        "Lancaster",
-        "Derwent"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He answered _______ ",
-      "choices": [
-        "an hour",
-        "1755-1793",
-        "1865-1942",
-        "1774-1833"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His ( PG _______ ) shaved face caught people 's anxiety . ",
-      "choices": [
-        "8",
-        "7",
-        "3",
-        "one"
-      ],
-      "answer": "A"
-    }
-  ],
-  "TextRankQuestions": [
-    {
-      "question": "What is the main idea of this passage?",
-      "choices": [
-        "The porter slid open the side door of the car.",
-        "He was so devastated that he was completely muddled by mud.",
-        "He no longer likes to show off dog shows on the riverside.",
-        "The dog squatted on the floor and the tail stirred the leaves."
-      ],
-      "answer": "A"
-    }
-  ],
-  "CoreferenceQuestions": [
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of <strike>his</strike>_<strike>chain</strike> , she had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"his chain\" mention in this sentence?",
-      "choices": [
-        "the taut chain",
-        "his tail",
-        "their",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Something far in its depths called him , and he plunged against <strike>the</strike>_<strike>chain</strike> . \nWhat does the underline word \"the chain\" mention in this sentence?",
-      "choices": [
-        "the taut chain",
-        "the heated car",
-        "this lost boy",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Underneath this embodied spirit of night galloped the dog , filling <strike>the</strike>_<strike>woods</strike> with barks , leaping high into the air , his teeth snapping and clicking like castanets . \nWhat does the underline word \"the woods\" mention in this sentence?",
-      "choices": [
-        "the woods",
-        "it",
-        "a man",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He sat down on his haunches and with ears erect watched the distant , whirling specks scatter into <strike>the</strike>_<strike>woods</strike> . \nWhat does the underline word \"the woods\" mention in this sentence?",
-      "choices": [
-        "the woods",
-        "their",
-        "the smell of a man",
-        "a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A young human three feet high , bare and frowsy of head , stood alone in <strike>the</strike>_<strike>woods</strike> . \nWhat does the underline word \"the woods\" mention in this sentence?",
-      "choices": [
-        "the woods",
-        "this forest",
-        "his haunches",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then there came through <strike>the</strike>_<strike>woods</strike> the crash of running footsteps , and a young man burst into view , his [ Pg 8 ] clean-shaven face drawn and anxious . \nWhat does the underline word \"the woods\" mention in this sentence?",
-      "choices": [
-        "the woods",
-        "A big shepherd dog",
-        "I",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging his tail , throwing <strike>his</strike>_<strike>ears</strike> far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"his ears\" mention in this sentence?",
-      "choices": [
-        "his ears",
-        "the leaves",
-        "the sun",
-        "the dog 's"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The boy dropped <strike>his</strike>_<strike>stick</strike> . \nWhat does the underline word \"his stick\" mention in this sentence?",
-      "choices": [
-        "a stick",
-        "the leaves",
-        "his eyes",
-        "the woods"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When <strike>they</strike> returned , as she pulled off her wraps , she would look down at him . \nWhat does the underline word \"they\" mention in this sentence?",
-      "choices": [
-        "their",
-        "this train",
-        "the heated car",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` I know , '' she would say ; `` <strike>you</strike> are trying to tell me you love me ! '' \nWhat does the underline word \"you\" mention in this sentence?",
-      "choices": [
-        "their",
-        "The Jersey kennels of George Devant",
-        "Freedom",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` I know , '' she would say ; `` you are trying to tell me <strike>you</strike> love me ! '' \nWhat does the underline word \"you\" mention in this sentence?",
-      "choices": [
-        "their",
-        "the heated car",
-        "Freedom",
-        "George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why it was that on their afternoon walks the dog , straining at his leash , kept <strike>his</strike>_<strike>hungry</strike>_<strike>eyes</strike> fastened always on the cliffs across the Hudson . \nWhat does the underline word \"his hungry eyes\" mention in this sentence?",
-      "choices": [
-        "his amazed puppy eyes",
-        "the leaves",
-        "the taut chain",
-        "the woods"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He was jerked back , choking , the glow out yonder reflected in <strike>his</strike>_<strike>desperate</strike>_<strike>eyes</strike> . \nWhat does the underline word \"his desperate eyes\" mention in this sentence?",
-      "choices": [
-        "his amazed puppy eyes",
-        "the open door",
-        "the tear-reddened eyes",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Toward <strike>it</strike> he cautiously slunk , in his heart a desperate , gnawing loneliness . \nWhat does the underline word \"it\" mention in this sentence?",
-      "choices": [
-        "the smell of a man",
-        "the leaves",
-        "a scarlet glow",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "For an hour he answered <strike>the</strike>_<strike>bell</strike> . \nWhat does the underline word \"the bell\" mention in this sentence?",
-      "choices": [
-        "a bell",
-        "the tear-reddened eyes",
-        "the taut chain",
-        "his haunches"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He lifted the boy to a broad shoulder and started for <strike>the</strike>_<strike>bell</strike> . \nWhat does the underline word \"the bell\" mention in this sentence?",
-      "choices": [
-        "a bell",
-        "his tail",
-        "the leaves",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of his haunches ; he carried his head low to the ground ; in <strike>his</strike>_<strike>eyes</strike>_<strike>gleamed</strike>_<strike>hunger</strike>_<strike>and</strike>_<strike>outlawry</strike> . \nWhat does the underline word \"his eyes gleamed hunger and outlawry\" mention in this sentence?",
-      "choices": [
-        "a bell",
-        "the open door",
-        "his eyes",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Courteously he would wag <strike>his</strike>_<strike>tail</strike> . \nWhat does the underline word \"his tail\" mention in this sentence?",
-      "choices": [
-        "his tail",
-        "his haunches",
-        "Dan VI",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Lancaster , bachelor friend of the late Devant , spoke up : `` Why , I had <strike>my</strike> eyes on him . '' \nWhat does the underline word \"my\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the leaves",
-        "the smell of a man",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>baggageman</strike> slid open the side door of the car . \nWhat does the underline word \"The baggageman\" mention in this sentence?",
-      "choices": [
-        "I",
-        "Dan VI",
-        "it",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>baggageman</strike> turned with a grin . \nWhat does the underline word \"The baggageman\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the woods",
-        "the sun",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>baggageman</strike> closed the door . \nWhat does the underline word \"The baggageman\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the leaves",
-        "his eyes",
-        "a bell"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>baggageman</strike> shook his head . \nWhat does the underline word \"The baggageman\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the open door",
-        "a scarlet glow",
-        "the dog 's warm body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The baggageman shook <strike>his</strike> head . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "Freedom",
-        "the woods",
-        "this forest"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Resignedly the dog sank on <strike>his</strike> belly , his long body throbbing , his nose between his paws . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the open door",
-        "His proud tail",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Resignedly the dog sank on his belly , <strike>his</strike> long body throbbing , his nose between his paws . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "the heated car",
-        "his ears",
-        "the dog 's"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Resignedly the dog sank on his belly , his long body throbbing , <strike>his</strike> nose between his paws . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "his head",
-        "his amazed puppy eyes",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Resignedly the dog sank on his belly , his long body throbbing , his nose between <strike>his</strike> paws . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "his tail",
-        "Freedom",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Three years before <strike>he</strike> had opened his amazed puppy eyes on this man ( and woman ) ruled planet . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "I",
-        "a stick",
-        "the heated car",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Three years before he had opened <strike>his</strike> amazed puppy eyes on this man ( and woman ) ruled planet . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "I",
-        "it",
-        "their",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "An agreeable place of abode <strike>he</strike> had found it as long as he was owned by a man . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "I",
-        "their",
-        "this train",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "An agreeable place of abode he had found it as long as <strike>he</strike> was owned by a man . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "I",
-        "his amazed puppy eyes",
-        "his",
-        "his nose"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The Jersey kennels of George Devant had bred <strike>him</strike> ; Devant had himself overlooked his first season 's training , had hunted him a few times . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "the leaves",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The Jersey kennels of George Devant had bred him ; <strike>Devant</strike> had himself overlooked his first season 's training , had hunted him a few times . \nWhat does the underline word \"Devant\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a stick",
-        "this lost boy",
-        "a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The Jersey kennels of George Devant had bred him ; Devant had <strike>himself</strike> overlooked his first season 's training , had hunted him a few times . \nWhat does the underline word \"himself\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "the sun",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The Jersey kennels of George Devant had bred him ; Devant had himself overlooked <strike>his</strike> first season 's training , had hunted him a few times . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his",
-        "Dan VI",
-        "the heated car"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The Jersey kennels of George Devant had bred him ; Devant had himself overlooked his first season 's training , had hunted <strike>him</strike> a few times . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the tear-reddened eyes",
-        "The Jersey kennels of George Devant",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At <strike>Devant</strike>_<strike>'s</strike> untimely death , Mrs. Devant had sold the place , the kennels , the mounts . \nWhat does the underline word \"Devant 's\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his shoulder",
-        "his eyes",
-        "the open door"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At Devant 's untimely death , <strike>Mrs.</strike>_<strike>Devant</strike> had sold the place , the kennels , the mounts . \nWhat does the underline word \"Mrs. Devant\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the dog 's warm body",
-        "A big shepherd dog",
-        "this man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where <strike>he</strike> waited at the end of his chain , she had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the dog 's",
-        "Dan VI",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of <strike>his</strike> chain , she had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his head",
-        "this man",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of his chain , she had clasped her hands together and cried out : `` <strike>I</strike> wo n't sell this one ! '' \nWhat does the underline word \"I\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "the smell of a man",
-        "the sun"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Lancaster , bachelor friend of the late Devant , spoke up : `` Why , I had my eyes on <strike>him</strike> . '' \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a man",
-        "The Jersey kennels of George Devant",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 3 ] `` <strike>You</strike> wo n't get him , '' she laughed . \nWhat does the underline word \"You\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "His proud tail",
-        "the dog 's",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 3 ] `` You wo n't get <strike>him</strike> , '' she laughed . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the taut chain",
-        "his eyes",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` <strike>He</strike> 'll live with me ? wo n't you , beauty ? '' \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "this forest",
-        "his",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` <strike>He</strike> 's not a lap dog , '' Lancaster had reminded her . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "I",
-        "this train",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` Do n't you suppose I understand <strike>him</strike> ? '' \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the smell of a man",
-        "this man",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Understand <strike>him</strike> ? \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the smell of a man",
-        "his ears",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then Lancaster , a frequent caller at the apartment of <strike>Mrs.</strike>_<strike>Devant</strike> , had borrowed him . \nWhat does the underline word \"Mrs. Devant\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Freedom",
-        "the leaves",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Had <strike>the</strike>_<strike>baggageman</strike> closed the door forever on all he loved in the world ? \nWhat does the underline word \"the baggageman\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "this train",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>baggageman</strike> opened the door and dropped to the ground . \nWhat does the underline word \"The baggageman\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his head",
-        "his haunches",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>They</strike> were in the country and the sun had set . \nWhat does the underline word \"They\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his nose",
-        "this train",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The silhouette of <strike>the</strike>_<strike>baggageman</strike> rose in the doorway . \nWhat does the underline word \"the baggageman\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "I",
-        "the smell of a man",
-        "this forest"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big red Irish setter was Dan , of his breed sixth , and most superb , his colour wavy-bronze , his head erect and noble , his eyes eloquent with that upward-looking appeal of <strike>hunting</strike>_<strike>dog</strike> to hunting man . \nWhat does the underline word \"hunting dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "the sun",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At the word <strike>the</strike>_<strike>dog</strike> reared straight up like a maddened horse . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his eyes",
-        "this train",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Resignedly <strike>the</strike>_<strike>dog</strike> sank on his belly , his long body throbbing , his nose between his paws . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the woods",
-        "A big shepherd dog",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why it was that on their afternoon walks <strike>the</strike>_<strike>dog</strike> , straining at his leash , kept his hungry eyes fastened always on the cliffs across the Hudson . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the sun",
-        "a scarlet glow",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why it was that on their afternoon walks the dog , straining at <strike>his</strike> leash , kept his hungry eyes fastened always on the cliffs across the Hudson . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the dog 's warm body",
-        "His proud tail",
-        "his nose"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why it was that on their afternoon walks the dog , straining at his leash , kept <strike>his</strike> hungry eyes fastened always on the cliffs across the Hudson . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "the open door",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When they returned , as she pulled off her wraps , she would look down at <strike>him</strike> . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the leaves",
-        "his eyes",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` <strike>I</strike> know , '' she would say ; `` you are trying to tell me you love me ! '' \nWhat does the underline word \"I\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his ears",
-        "a scarlet glow",
-        "the heated car"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` I know , '' she would say ; `` you are trying to tell <strike>me</strike> you love me ! '' \nWhat does the underline word \"me\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "the woods",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` I know , '' she would say ; `` you are trying to tell me you love <strike>me</strike> ! '' \nWhat does the underline word \"me\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the tear-reddened eyes",
-        "his ears",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Courteously <strike>he</strike> would wag his tail . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his",
-        "his head",
-        "the sun"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Courteously he would wag <strike>his</strike> tail . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Dan VI",
-        "the dog 's warm body",
-        "His proud tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Futilely , out of upraised , gently brave eyes <strike>he</strike> would plead for freedom ? from a woman who did not know , and could not understand . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a bell",
-        "this train",
-        "the dog 's warm body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then Lancaster , a frequent caller at the apartment of Mrs. Devant , had borrowed <strike>him</strike> . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his shoulder",
-        "a man",
-        "his nose"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "That morning Lancaster <strike>himself</strike> had put him aboard this train . \nWhat does the underline word \"himself\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "I",
-        "the sun",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "That morning Lancaster himself had put <strike>him</strike> aboard this train . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "Freedom",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` The trip , '' Lancaster had said , `` will be easier if we do n't crate <strike>him</strike> . '' \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the leaves",
-        "this forest",
-        "His proud tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "All day <strike>he</strike> had known he was being hurled away . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "a stick",
-        "the smell of a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "All day he had known <strike>he</strike> was being hurled away . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the heated car",
-        "his",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Was another grimy wilderness of brick <strike>his</strike> destination ? \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "his head",
-        "His proud tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Had the baggageman closed the door forever on all <strike>he</strike> loved in the world ? \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Dan VI",
-        "A big shepherd dog",
-        "the dog 's"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Through the door <strike>the</strike>_<strike>dog</strike> looked across a dusky field to a black horizon of forest . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "The Jersey kennels of George Devant",
-        "his eyes",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Something far in its depths called <strike>him</strike> , and he plunged against the chain . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a stick",
-        "a scarlet glow",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Something far in its depths called him , and <strike>he</strike> plunged against the chain . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his nose",
-        "his ears",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> was jerked back , choking , the glow out yonder reflected in his desperate eyes . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "His proud tail",
-        "the dog 's",
-        "his nose"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He was jerked back , choking , the glow out yonder reflected in <strike>his</strike> desperate eyes . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a bell",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "His proud tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> backed against the wall , took a running start , and plunged again . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the sun",
-        "The Jersey kennels of George Devant",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The breaking of <strike>his</strike> collar hurled him against a trunk on the other side of the car , dazed and confused . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The breaking of his collar hurled <strike>him</strike> against a trunk on the other side of the car , dazed and confused . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a bell",
-        "Dan VI",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A sharp approaching whistle , an ever-loudening roar in that brooding silence out there aroused <strike>him</strike> to a sense of his surroundings . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his head",
-        "the woods",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A sharp approaching whistle , an ever-loudening roar in that brooding silence out there aroused him to a sense of <strike>his</strike> surroundings . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "this man",
-        "the heated car",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>dog</strike> gathered himself together and leaped . \nWhat does the underline word \"The dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his haunches",
-        "a scarlet glow",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog gathered <strike>himself</strike> together and leaped . \nWhat does the underline word \"himself\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "a bell",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> landed on shining rails , in front of a blinding headlight ; the pilot just missed him as he sprang out of the way . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "I",
-        "a bell",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He landed on shining rails , in front of a blinding headlight ; the pilot just missed <strike>him</strike> as he sprang out of the way . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his amazed puppy eyes",
-        "a bell",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He landed on shining rails , in front of a blinding headlight ; the pilot just missed him as <strike>he</strike> sprang out of the way . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Dan VI",
-        "their",
-        "his haunches"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "For a moment <strike>he</strike> stood on the slight embankment , his ears thrown defiantly back . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "His proud tail",
-        "a stick",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "For a moment he stood on the slight embankment , <strike>his</strike> ears thrown defiantly back . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the dog 's warm body",
-        "the dog 's",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then <strike>he</strike> turned , and with great lung-filling leaps bounded toward the glow in the west . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a bell",
-        "his eyes",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "It was dark in the woods when <strike>he</strike> stopped and [ Pg 5 ] lapped loud and long of icy running water . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "His proud tail",
-        "Freedom",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Underneath this embodied spirit of night galloped <strike>the</strike>_<strike>dog</strike> , filling the woods with barks , leaping high into the air , his teeth snapping and clicking like castanets . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the heated car",
-        "this man",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "If <strike>the</strike>_<strike>dog</strike> had been full of meat , if a mate had trotted beside him , still he would have hungered for the countenance and voice of a master . \nWhat does the underline word \"the dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "their",
-        "A big shepherd dog",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>dog</strike> still advanced wagging his tail , throwing his ears far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"The dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "His proud tail",
-        "the smell of a man",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging <strike>his</strike> tail , throwing his ears far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "the taut chain",
-        "I",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging his tail , throwing <strike>his</strike> ears far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his head",
-        "this train",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging his tail , throwing his ears far back , crawling contritely on <strike>his</strike> belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "Dan VI",
-        "his shoulder",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging his tail , throwing his ears far back , crawling contritely on his belly , begging in every way <strike>he</strike> could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "his amazed puppy eyes",
-        "the heated car",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>dog</strike> went to him and gazed longingly into the tear-reddened eyes . \nWhat does the underline word \"The dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "a scarlet glow",
-        "his amazed puppy eyes",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>dog</strike> sank to his haunches , his tail stirring the leaves . \nWhat does the underline word \"The dog\" mention in this sentence?",
-      "choices": [
-        "George Devant",
-        "this lost boy",
-        "his head",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A telegraph pole that had stood black athwart <strike>the</strike>_<strike>glow</strike> began to move backward . \nWhat does the underline word \"the glow\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "his nose",
-        "the dog 's warm body",
-        "a bell"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , <strike>the</strike>_<strike>widow</strike> came to the kennel where he waited at the end of his chain , she had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"the widow\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "the dog 's",
-        "his haunches",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of his chain , <strike>she</strike> had clasped her hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "the open door",
-        "the dog 's",
-        "this man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "But when , followed by a group of purchasing sportsmen , the widow came to the kennel where he waited at the end of his chain , she had clasped <strike>her</strike> hands together and cried out : `` I wo n't sell this one ! '' \nWhat does the underline word \"her\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "this man",
-        "his eyes",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 3 ] `` You wo n't get him , '' <strike>she</strike> laughed . \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "the open door",
-        "George Devant",
-        "the dog 's"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` He 'll live with me ? wo <strike>n't</strike> you , beauty ? '' \nWhat does the underline word \"you\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "Freedom",
-        "the leaves",
-        "the heated car"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` He 's not a lap dog , '' <strike>Lancaster</strike> had reminded her . \nWhat does the underline word \"Lancaster\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "their",
-        "the open door",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` He 's not a lap dog , '' Lancaster had reminded <strike>her</strike> . \nWhat does the underline word \"her\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "the woods",
-        "the dog 's",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` Do n't you suppose <strike>I</strike> understand him ? '' \nWhat does the underline word \"I\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "his shoulder",
-        "the woods",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>she</strike> demanded . \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "his ears",
-        "his shoulder",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "To Mrs. Devant it never occurred , even remotely , that <strike>her</strike> Riverside Drive apartment was a prison . \nWhat does the underline word \"her\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "I",
-        "his ears",
-        "the heated car"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>She</strike> never dreamed why it was that on their afternoon walks the dog , straining at his leash , kept his hungry eyes fastened always on the cliffs across the Hudson . \nWhat does the underline word \"She\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "his eyes",
-        "this lost boy",
-        "his nose"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When they returned , as <strike>she</strike> pulled off her wraps , she would look down at him . \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "it",
-        "his eyes",
-        "the sun"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When they returned , as she pulled off <strike>her</strike> wraps , she would look down at him . \nWhat does the underline word \"her\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "this train",
-        "a bell",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When they returned , as she pulled off her wraps , <strike>she</strike> would look down at him . \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "the heated car",
-        "a bell",
-        "His proud tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` I know , '' <strike>she</strike> would say ; `` you are trying to tell me you love me ! '' \nWhat does the underline word \"she\" mention in this sentence?",
-      "choices": [
-        "a scarlet glow",
-        "His proud tail",
-        "it",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "That morning <strike>Lancaster</strike>_<strike>himself</strike> had put him aboard this train . \nWhat does the underline word \"Lancaster himself\" mention in this sentence?",
-      "choices": [
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "his",
-        "his amazed puppy eyes",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "`` The trip , '' <strike>Lancaster</strike> had said , `` will be easier if we do n't crate him . '' \nWhat does the underline word \"Lancaster\" mention in this sentence?",
-      "choices": [
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "a man",
-        "a stick",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The baggageman slid open the side door of <strike>the</strike>_<strike>car</strike> . \nWhat does the underline word \"the car\" mention in this sentence?",
-      "choices": [
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "a bell",
-        "the dog 's",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The breaking of his collar hurled him against a trunk on the other side of <strike>the</strike>_<strike>car</strike> , dazed and confused . \nWhat does the underline word \"the car\" mention in this sentence?",
-      "choices": [
-        "the heated car",
-        "a stick",
-        "a man",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Far the child must have wandered from home , and suffered much , for , terror removed , he curled up in <strike>the</strike>_<strike>leaves</strike> and fell asleep , the dog 's warm body curled up beside . \nWhat does the underline word \"the leaves\" mention in this sentence?",
-      "choices": [
-        "the leaves",
-        "his tail",
-        "His proud tail",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>His</strike>_<strike>body</strike> was shaken by dry sobs , as if the tear supply had long since been exhausted . \nWhat does the underline word \"His body\" mention in this sentence?",
-      "choices": [
-        "the leaves",
-        "the dog 's",
-        "this lost boy",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "With a rattle of <strike>his</strike> chain Dan sprang to his feet . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "his shoulder",
-        "this lost boy",
-        "a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "With a rattle of his chain Dan sprang to <strike>his</strike> feet . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "I",
-        "this man",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big red Irish setter was Dan , of <strike>his</strike> breed sixth , and most superb , his colour wavy-bronze , his head erect and noble , his eyes eloquent with that upward-looking appeal of hunting dog to hunting man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "His proud tail",
-        "a bell",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big red Irish setter was Dan , of his breed sixth , and most superb , <strike>his</strike> colour wavy-bronze , his head erect and noble , his eyes eloquent with that upward-looking appeal of hunting dog to hunting man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "The Jersey kennels of George Devant",
-        "a stick",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big red Irish setter was Dan , of his breed sixth , and most superb , his colour wavy-bronze , <strike>his</strike> head erect and noble , his eyes eloquent with that upward-looking appeal of hunting dog to hunting man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "Freedom",
-        "the taut chain",
-        "Dan VI"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big red Irish setter was Dan , of his breed sixth , and most superb , his colour wavy-bronze , his head erect and noble , <strike>his</strike> eyes eloquent with that upward-looking appeal of hunting dog to hunting man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "A big shepherd dog",
-        "the tear-reddened eyes",
-        "the woods"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Cold , pine-laden air deluged the heated car and chilled <strike>his</strike> quivering nose and swelled his heaving chest . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "his",
-        "the dog 's",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Cold , pine-laden air deluged the heated car and chilled his quivering nose and swelled <strike>his</strike> heaving chest . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "the woods",
-        "the open door",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Beyond the baggageman <strike>he</strike> saw through the open door , as on a moving-picture screen , sunlit fields and sunlit woods whirling past . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "his",
-        "his amazed puppy eyes",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> began to bark at them eagerly , his eyes hungry , his tail beating against the taut chain an excited tattoo . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "the sun",
-        "his haunches",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He began to bark at them eagerly , <strike>his</strike> eyes hungry , his tail beating against the taut chain an excited tattoo . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "a bell",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "the sun"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He began to bark at them eagerly , his eyes hungry , <strike>his</strike> tail beating against the taut chain an excited tattoo . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "his amazed puppy eyes",
-        "his haunches",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>he</strike> said . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "their",
-        "his haunches",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Full-throated angry barks , interspersed with sharp , querulous yaps , filled <strike>his</strike> roaring , [ Pg 2 ] swaying prison . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "this train",
-        "the open door",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "How long since <strike>he</strike> had got so much as a whiff of untainted air , or a glimpse of wild fields and woods ! \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "A big shepherd dog",
-        "I",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Out there miles on miles of freedom were rushing forever out of <strike>his</strike> life . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "His proud tail",
-        "the tear-reddened eyes",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> began to rage , to froth at the mouth . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "the dog 's warm body",
-        "his haunches",
-        "his",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Now and then he picked up a stray chicken ; twice he fought inquisitive hounds ; always his nose pointed like a compass toward the place where <strike>the</strike>_<strike>sun</strike> set . \nWhat does the underline word \"the sun\" mention in this sentence?",
-      "choices": [
-        "the sun",
-        "I",
-        "his tail",
-        "the woods"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He began to bark at them eagerly , <strike>his</strike>_<strike>eyes</strike> hungry , his tail beating against the taut chain an excited tattoo . \nWhat does the underline word \"his eyes\" mention in this sentence?",
-      "choices": [
-        "his eyes",
-        "the dog 's",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "his shoulder"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "In the edge of a straw field looked down upon by stars <strike>he</strike> rushed a covey on the roost . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the dog 's warm body",
-        "a scarlet glow",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan leaped upon <strike>him</strike> . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his",
-        "their",
-        "his ears",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>His</strike> hunger satisfied , he tramped a pile of leaves into a bed , and slept . \nWhat does the underline word \"His\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the dog 's",
-        "a bell",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His hunger satisfied , <strike>he</strike> tramped a pile of leaves into a bed , and slept . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his",
-        "Dan VI",
-        "this train",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At sunrise <strike>he</strike> chased an early rabbit into an impenetrable , frost-incrusted brier patch . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his",
-        "The Jersey kennels of George Devant",
-        "their",
-        "the open door"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> rushed another covey , that flew away like the wind . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his",
-        "his eyes",
-        "their",
-        "his haunches"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> sat down on his haunches and with ears erect watched the distant , whirling specks scatter into the woods . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the leaves",
-        "this man",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He sat down on <strike>his</strike> haunches and with ears erect watched the distant , whirling specks scatter into the woods . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the open door",
-        "the tear-reddened eyes",
-        "the smell of a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> was helpless in the daylight without man and gun . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his",
-        "A big shepherd dog",
-        "his nose",
-        "the smell of a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> remembered a white-tiled butcher shop on upper Broadway , and licked his chops at the recollection . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the heated car",
-        "Dan VI",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He remembered a white-tiled butcher shop on upper Broadway , and licked <strike>his</strike> chops at the recollection . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "Freedom",
-        "the open door",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At midday , a hungry tramp , <strike>he</strike> approached a farmhouse . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his",
-        "his tail",
-        "the dog 's warm body",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A big shepherd dog met <strike>him</strike> . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his",
-        "a man",
-        "The Jersey kennels of George Devant",
-        "this man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>boy</strike> dropped his stick . \nWhat does the underline word \"The boy\" mention in this sentence?",
-      "choices": [
-        "his",
-        "it",
-        "the open door",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The boy dropped <strike>his</strike> stick . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "this forest",
-        "it",
-        "the smell of a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog went to <strike>him</strike> and gazed longingly into the tear-reddened eyes . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his",
-        "his nose",
-        "it",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Humbly <strike>he</strike> licked the chubby hands , then the tear-soaked face . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his",
-        "his nose",
-        "their",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>boy</strike> smiled with a dawn of trust , put his hand testingly on the shaggy head , then round his neck . \nWhat does the underline word \"The boy\" mention in this sentence?",
-      "choices": [
-        "his",
-        "their",
-        "his nose",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The boy smiled with a dawn of trust , put <strike>his</strike> hand testingly on the shaggy head , then round his neck . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "their",
-        "his amazed puppy eyes",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The boy smiled with a dawn of trust , put his hand testingly on the shaggy head , then round <strike>his</strike> neck . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "the taut chain",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog sank to <strike>his</strike> haunches , his tail stirring the leaves . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the leaves",
-        "it",
-        "this man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog sank to his haunches , <strike>his</strike> tail stirring the leaves . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his",
-        "the smell of a man",
-        "the taut chain",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>boy</strike> gave a convulsive hug . \nWhat does the underline word \"The boy\" mention in this sentence?",
-      "choices": [
-        "his",
-        "this train",
-        "this man",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He stooped , picked <strike>the</strike>_<strike>boy</strike> up , felt his arms and legs , laughed out loud . \nWhat does the underline word \"the boy\" mention in this sentence?",
-      "choices": [
-        "this lost boy",
-        "a scarlet glow",
-        "his nose",
-        "this forest"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He lifted <strike>the</strike>_<strike>boy</strike> to a broad shoulder and started for the bell . \nWhat does the underline word \"the boy\" mention in this sentence?",
-      "choices": [
-        "this lost boy",
-        "his",
-        "a stick",
-        "this forest"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 4 ] <strike>The</strike>_<strike>train</strike> slowed up , stopped . \nWhat does the underline word \"The train\" mention in this sentence?",
-      "choices": [
-        "this train",
-        "The Jersey kennels of George Devant",
-        "the sun",
-        "a bell"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of <strike>his</strike>_<strike>haunches</strike> ; he carried his head low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"his haunches\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "this lost boy",
-        "Dan VI",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan sat on <strike>his</strike>_<strike>haunches</strike> , elevated his nose like an aircraft gun , and began to bay . \nWhat does the underline word \"his haunches\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "this lost boy",
-        "this man",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>Dan</strike> leaped upon him . \nWhat does the underline word \"Dan\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his amazed puppy eyes",
-        "their",
-        "the dog 's"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When the fierce mix-up was over , and the shepherd had retreated , <strike>Dan</strike> carried in his shoulder a long , deep cut . \nWhat does the underline word \"Dan\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "a scarlet glow",
-        "the sun",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When the fierce mix-up was over , and the shepherd had retreated , Dan carried in <strike>his</strike> shoulder a long , deep cut . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his ears",
-        "this train",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Impelled by the gnawing in <strike>his</strike> stomach , he limped toward a log cabin . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "I",
-        "it",
-        "the leaves"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Impelled by the gnawing in his stomach , <strike>he</strike> limped toward a log cabin . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "their",
-        "A big shepherd dog",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A troop of black children ran screaming at sight of <strike>him</strike> , and a black man burst out of the cabin door with a gun . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the dog 's",
-        "his",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "As <strike>he</strike> turned and bounded away , a shot stung his rump , [ Pg 6 ] and others hummed around him . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "The Jersey kennels of George Devant",
-        "his shoulder",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "As he turned and bounded away , a shot stung <strike>his</strike> rump , [ Pg 6 ] and others hummed around him . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "George Devant",
-        "this forest",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "As he turned and bounded away , a shot stung his rump , [ Pg 6 ] and others hummed around <strike>him</strike> . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the leaves",
-        "the sun",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> made for the woods , a pack of yelping curs on his trail . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his nose",
-        "this train",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He made for the woods , a pack of yelping curs on <strike>his</strike> trail . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "a scarlet glow",
-        "the smell of a man",
-        "George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "From this time <strike>he</strike> avoided the habitations and highways of man , keeping to the woods and streams , turning reluctantly aside at the smell of a human being . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "this man",
-        "a stick",
-        "the smell of a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Now and then <strike>he</strike> picked up a stray chicken ; twice he fought inquisitive hounds ; always his nose pointed like a compass toward the place where the sun set . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "a bell",
-        "Dan VI",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Now and then he picked up a stray chicken ; twice <strike>he</strike> fought inquisitive hounds ; always his nose pointed like a compass toward the place where the sun set . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the dog 's",
-        "a man",
-        "this train"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Now and then he picked up a stray chicken ; twice he fought inquisitive hounds ; always <strike>his</strike> nose pointed like a compass toward the place where the sun set . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the heated car",
-        "their",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> no longer resembled the dog that had graced the canine parade on Riverside Drive . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his",
-        "the woods",
-        "the sun"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> was gaunt , torn , caked with mud . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the dog 's",
-        "the open door",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>His</strike> proud tail followed the curve of his haunches ; he carried his head low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"His\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "A big shepherd dog",
-        "the sun",
-        "a bell"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of <strike>his</strike> haunches ; he carried his head low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "this lost boy",
-        "I",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of his haunches ; <strike>he</strike> carried his head low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "His proud tail",
-        "a stick",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of his haunches ; he carried <strike>his</strike> head low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "Freedom",
-        "the tear-reddened eyes",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of his haunches ; he carried his head low to the ground ; in <strike>his</strike> eyes gleamed hunger and outlawry . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "The Jersey kennels of George Devant",
-        "his head",
-        "his"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Toward it <strike>he</strike> cautiously slunk , in his heart a desperate , gnawing loneliness . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his head",
-        "the leaves",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Toward it he cautiously slunk , in <strike>his</strike> heart a desperate , gnawing loneliness . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "I",
-        "a man",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "A masterless dog is like a godless man : there is no motivation sufficient for <strike>his</strike> struggles and achievements . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the open door",
-        "The Jersey kennels of George Devant",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "If the dog had been full of meat , if a mate had trotted beside <strike>him</strike> , still he would have hungered for the countenance and voice of a master . \nWhat does the underline word \"him\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the heated car",
-        "his head",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "If the dog had been full of meat , if a mate had trotted beside him , still <strike>he</strike> would have hungered for the countenance and voice of a master . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "it",
-        "his ears",
-        "the taut chain"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Suddenly <strike>he</strike> sank to the ground and looked keenly ahead . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the smell of a man",
-        "his tail",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>His</strike> body was shaken by dry sobs , as if the tear supply had long since been exhausted . \nWhat does the underline word \"His\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the open door",
-        "A big shepherd dog",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Now and then <strike>he</strike> looked fearfully around at the darkening shadows . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "Freedom",
-        "the smell of a man",
-        "it"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 7 ] Plainly , <strike>he</strike> was lost ; plainly , he needed protection . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "A big shepherd dog",
-        "a scarlet glow",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "[ Pg 7 ] Plainly , he was lost ; plainly , <strike>he</strike> needed protection . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the woods",
-        "the open door",
-        "a stick"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>The</strike>_<strike>man-child</strike> shrieked , turned , and ran , his terrified red face turned over his shoulder . \nWhat does the underline word \"The man-child\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "Dan VI",
-        "the heated car",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The man-child shrieked , turned , and ran , <strike>his</strike> terrified red face turned over his shoulder . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his ears",
-        "the open door",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The man-child shrieked , turned , and ran , his terrified red face turned over <strike>his</strike> shoulder . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "the dog 's",
-        "his ears",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> tripped , fell headlong , scrambled to his feet , picked up a stick , and faced about like a little cave man . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "I",
-        "it",
-        "their"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He tripped , fell headlong , scrambled to <strike>his</strike> feet , picked up a stick , and faced about like a little cave man . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "his haunches",
-        "his",
-        "the sun",
-        "a scarlet glow"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan VI knew that <strike>his</strike> wanderings were over . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "the heated car",
-        "his amazed puppy eyes",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Far the child must have wandered from home , and suffered much , for , terror removed , <strike>he</strike> curled up in the leaves and fell asleep , the dog 's warm body curled up beside . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "a bell",
-        "this train",
-        "Freedom"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Suddenly <strike>Dan</strike> sprang up . \nWhat does the underline word \"Dan\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "A big shepherd dog",
-        "his amazed puppy eyes",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>Dan</strike> sat on his haunches , elevated his nose like an aircraft gun , and began to bay . \nWhat does the underline word \"Dan\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "his shoulder",
-        "his eyes",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan sat on <strike>his</strike> haunches , elevated his nose like an aircraft gun , and began to bay . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "it",
-        "the woods",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan sat on his haunches , elevated <strike>his</strike> nose like an aircraft gun , and began to bay . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "the smell of a man",
-        "the sun",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "For an hour <strike>he</strike> answered the bell . \nWhat does the underline word \"he\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "the sun",
-        "his",
-        "I"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Then there came through the woods the crash of running footsteps , and a young man burst into view , <strike>his</strike> [ Pg 8 ] clean-shaven face drawn and anxious . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "the dog 's",
-        "A big shepherd dog",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> stooped , picked the boy up , felt his arms and legs , laughed out loud . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "it",
-        "his haunches",
-        "this man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "He stooped , picked the boy up , felt <strike>his</strike> arms and legs , laughed out loud . \nWhat does the underline word \"his\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "A big shepherd dog",
-        "this train",
-        "the heated car"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "<strike>He</strike> lifted the boy to a broad shoulder and started for the bell . \nWhat does the underline word \"He\" mention in this sentence?",
-      "choices": [
-        "Dan VI",
-        "his amazed puppy eyes",
-        "the open door",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The man-child shrieked , turned , and ran , his terrified red face turned over <strike>his</strike>_<strike>shoulder</strike> . \nWhat does the underline word \"his shoulder\" mention in this sentence?",
-      "choices": [
-        "his shoulder",
-        "a scarlet glow",
-        "the open door",
-        "A big shepherd dog"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Dan sat on his haunches , elevated <strike>his</strike>_<strike>nose</strike> like an aircraft gun , and began to bay . \nWhat does the underline word \"his nose\" mention in this sentence?",
-      "choices": [
-        "his nose",
-        "their",
-        "his eyes",
-        "this lost boy"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The baggageman closed <strike>the</strike>_<strike>door</strike> . \nWhat does the underline word \"the door\" mention in this sentence?",
-      "choices": [
-        "the open door",
-        "the taut chain",
-        "I",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Had the baggageman closed <strike>the</strike>_<strike>door</strike> forever on all he loved in the world ? \nWhat does the underline word \"the door\" mention in this sentence?",
-      "choices": [
-        "the open door",
-        "a stick",
-        "the sun",
-        "the tear-reddened eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The baggageman opened <strike>the</strike>_<strike>door</strike> and dropped to the ground . \nWhat does the underline word \"the door\" mention in this sentence?",
-      "choices": [
-        "the open door",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "the dog 's warm body",
-        "his eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Through <strike>the</strike>_<strike>door</strike> the dog looked across a dusky field to a black horizon of forest . \nWhat does the underline word \"the door\" mention in this sentence?",
-      "choices": [
-        "the open door",
-        "the dog 's",
-        "his ears",
-        "The Jersey kennels of George Devant"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "When the fierce mix-up was over , and <strike>the</strike>_<strike>shepherd</strike> had retreated , Dan carried in his shoulder a long , deep cut . \nWhat does the underline word \"the shepherd\" mention in this sentence?",
-      "choices": [
-        "A big shepherd dog",
-        "His proud tail",
-        "his eyes",
-        "the open door"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Therefore <strike>the</strike>_<strike>big</strike>_<strike>dog</strike> advanced with ingratiating tail . \nWhat does the underline word \"the big dog\" mention in this sentence?",
-      "choices": [
-        "A big shepherd dog",
-        "a man",
-        "the tear-reddened eyes",
-        "his tail"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The baggageman shook <strike>his</strike>_<strike>head</strike> . \nWhat does the underline word \"his head\" mention in this sentence?",
-      "choices": [
-        "his head",
-        "A big shepherd dog",
-        "his amazed puppy eyes",
-        "this forest"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "His proud tail followed the curve of his haunches ; he carried <strike>his</strike>_<strike>head</strike> low to the ground ; in his eyes gleamed hunger and outlawry . \nWhat does the underline word \"his head\" mention in this sentence?",
-      "choices": [
-        "his head",
-        "the dog 's warm body",
-        "the tear-reddened eyes",
-        "his ears"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Through the door the dog looked across a dusky field to a black horizon of <strike>forest</strike> . \nWhat does the underline word \"forest\" mention in this sentence?",
-      "choices": [
-        "his head",
-        "this lost boy",
-        "his eyes",
-        "his amazed puppy eyes"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging his tail , throwing his ears far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of <strike>a</strike>_<strike>man</strike> . \nWhat does the underline word \"a man\" mention in this sentence?",
-      "choices": [
-        "a man",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "this man",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "At Devant 's untimely death , Mrs. Devant had sold the place , <strike>the</strike>_<strike>kennels</strike>_<strike>,</strike>_<strike>the</strike>_<strike>mounts</strike> . \nWhat does the underline word \"the kennels , the mounts\" mention in this sentence?",
-      "choices": [
-        "The Jersey kennels of George Devant",
-        "the taut chain",
-        "Lancaster , a frequent caller at the apartment of Mrs. Devant",
-        "a man"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "She never dreamed why <strike>it</strike> was that on their afternoon walks the dog , straining at his leash , kept his hungry eyes fastened always on the cliffs across the Hudson . \nWhat does the underline word \"it\" mention in this sentence?",
-      "choices": [
-        "it",
-        "the woods",
-        "His proud tail",
-        "the dog 's warm body"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "Freedom had exacted <strike>its</strike> price . \nWhat does the underline word \"its\" mention in this sentence?",
-      "choices": [
-        "Freedom",
-        "his amazed puppy eyes",
-        "a man",
-        "his head"
-      ],
-      "answer": "A"
-    },
-    {
-      "question": "The dog still advanced wagging <strike>his</strike>_<strike>tail</strike> , throwing his ears far back , crawling contritely on his belly , begging in every way he could beg to be allowed to serve this offspring of a man . \nWhat does the underline word \"his tail\" mention in this sentence?",
-      "choices": [
-        "His proud tail",
-        "A big shepherd dog",
-        "it",
-        "Freedom"
-      ],
-      "answer": "A"
-    }
-  ]
+    "RelationQuestions": [
+        {
+            "question": "What is the possible relationship between analysis  and  countries can you infer from the passage?",
+            "choices": [
+                "country",
+                "subclass of",
+                "continent",
+                "part of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between International Labor Organization  and  Studies can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "country",
+                "continent",
+                "part of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between wages  and  job insecurity can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "country",
+                "continent",
+                "shares border with"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between wages  and  cultural issues can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "shares border with",
+                "continent",
+                "part of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Getty Images  and  Credit can you infer from the passage?",
+            "choices": [
+                "part of",
+                "country",
+                "shares border with",
+                "subclass of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between problem  and  excessive fatigue can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "country",
+                "continent",
+                "part of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between problem  and  death can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "shares border with",
+                "continent",
+                "country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between OECD  and  work can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "shares border with",
+                "continent",
+                "country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between government  and  cases can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "continent",
+                "country",
+                "part of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between problem  and  excessive fatigue can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "continent",
+                "country",
+                "shares border with"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between problem  and  death can you infer from the passage?",
+            "choices": [
+                "subclass of",
+                "part of",
+                "continent",
+                "country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between International Labour Organisation  and  high threshold can you infer from the passage?",
+            "choices": [
+                "country",
+                "shares border with",
+                "part of",
+                "subclass of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between ILO  and  countries can you infer from the passage?",
+            "choices": [
+                "part of",
+                "shares border with",
+                "country",
+                "subclass of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Americas  and  Caribbean can you infer from the passage?",
+            "choices": [
+                "part of",
+                "subclass of",
+                "country",
+                "shares border with"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Americas  and  countries can you infer from the passage?",
+            "choices": [
+                "shares border with",
+                "country",
+                "part of",
+                "subclass of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Caribbean  and  countries can you infer from the passage?",
+            "choices": [
+                "part of",
+                "country",
+                "continent",
+                "subclass of"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Middle East  and  countries can you infer from the passage?",
+            "choices": [
+                "continent",
+                "subclass of",
+                "part of",
+                "country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Europe  and  other hand can you infer from the passage?",
+            "choices": [
+                "part of",
+                "subclass of",
+                "continent",
+                "shares border with"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the possible relationship between Europe  and  country can you infer from the passage?",
+            "choices": [
+                "shares border with",
+                "subclass of",
+                "continent",
+                "country"
+            ],
+            "answer": "A"
+        }
+    ],
+    "NerQuestions": [
+        {
+            "question": "According to the _______ data compiled by the OECD , South Korea \u2019s current working hours are longer than any other developed country : the average person works 2069 hours per year ",
+            "choices": [
+                "2016",
+                "1713",
+                "2069",
+                "current"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The analysis covers _______ countries and shows that only Mexicans ( 2225 hours\\/year ) and Costa Ricans ( 2212 hours \\ / year ) work longer hours ",
+            "choices": [
+                "38",
+                "1,456",
+                "One",
+                "one"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "_______ oppose global trends : Studies conducted by the International Labor Organization ( ILO ) show that low - and middle-income countries work longer than their more affluent countries , thanks to a range of factors , including a series of self-employed workers . ",
+            "choices": [
+                "South Koreans",
+                "Old Tales Told in Those Western",
+                "Title The Child of Pleasure LanguageEnglishLoC Class",
+                "CategoryTextEBook-No.20130 Release DateDec"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "( Credit : _______ ) Overworked deaths are very common in Japan and they have one word : Karoshi ( Credit : _______ ) However , South Korea 's is not the only country that dares to challenge this possibility . ",
+            "choices": [
+                "Getty Images",
+                "International Labour Organisation",
+                "Workers \u2019 Rights Group",
+                "International Labor Organization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "_______ has the problem of \u201c excessive fatigue and death , \u201d not only statistical data , but also Japanese people have a word for this term : overwork . ",
+            "choices": [
+                "Japan",
+                "Belgium",
+                "United States",
+                "Turkey"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The average number of _______ hours of work per year in Japan is not the highest among the OECD 's list , but beyond this figure , there is a grim reality that the country has no legislation that imposes a maximum weekly working time limit and no overtime restrictions . ",
+            "choices": [
+                "1713",
+                "2069",
+                "current",
+                "2016"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In the _______ financial year , the government recorded 1,456 cases of overwork deaths . ",
+            "choices": [
+                "2015-16",
+                "1,456",
+                "One",
+                "10"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "_______ claims that due to missing reports , actual figures may be many times higher . ",
+            "choices": [
+                "Workers \u2019 Rights Group",
+                "ILO",
+                "International Labor Organization",
+                "International Labour Organisation"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "_______ has the problem of \u201c excessive fatigue and death , \u201d not only statistical data , but also Japanese people have a word for this term : overwork . ",
+            "choices": [
+                "Japan",
+                "Belgium",
+                "South Korea",
+                "Korea"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "According to the latest data from the _______ , Asia is a continent where people work the longest : most countries ( 32 % ) do not have a national limit of maximum working hours per week , and another 29 % have a high threshold ( per week 60 hours or more ) . ",
+            "choices": [
+                "International Labour Organisation",
+                "Workers \u2019 Rights Group",
+                "ILO",
+                "OECD"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Only _______ of countries adhere to the ILO 's recommendations and set international labor standards to a maximum of 48 hours or less in the work week ",
+            "choices": [
+                "4 %",
+                "32 %",
+                "29 %",
+                "34 %"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In the _______ and the Caribbean , 34 % of countries have no universal weekly working hours , which is the highest ratio between regions . ",
+            "choices": [
+                "Americas",
+                "Caribbean",
+                "Middle East",
+                "Europe"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "_______ of the countries without restrictions is the United States ",
+            "choices": [
+                "One",
+                "one",
+                "10",
+                "2015-16"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "But in the _______ , the legal restrictions are much longer : Eight out of 10 countries allow more than 60 hours per week ",
+            "choices": [
+                "Middle East",
+                "Americas",
+                "Caribbean",
+                "Europe"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "On the other hand , in _______ , each country has the most weekly working hours , and only Belgium and Turkey have legal working hours of more than 48 hours ",
+            "choices": [
+                "Europe",
+                "Caribbean",
+                "Middle East",
+                "Americas"
+            ],
+            "answer": "A"
+        }
+    ],
+    "TextRankQuestions": [
+        {
+            "question": "What is the main idea of this passage?",
+            "choices": [
+                "According to the 2016 data compiled by the OECD, South Korea\u2019s current working hours are longer than any other developed country: the average person works 2069 hours per year.",
+                "Japan has the problem of \u201cexcessive fatigue and death,\u201d not only statistical data, but also Japanese people have a word for this term: overwork.",
+                "Only 4% of countries adhere to the ILO's recommendations and set international labor standards to a maximum of 48 hours or less in the work week.",
+                "Reduce wages, job insecurity and cultural issues."
+            ],
+            "answer": "A"
+        }
+    ],
+    "CoreferenceQuestions": [
+        {
+            "question": "According to ILO 's most recent figures , Asia is a continent where more people work the longest hours : most of <u>the</u>_<u>countries</u> ( 32 % ) have no universal national limit for maximum weekly working hours and another 29 % have high thresholds ( 60 weekly hours or more ) . \nWhat does the underline word \"the countries\" mention in this sentence?",
+            "choices": [
+                "38 countries",
+                "the OECD",
+                "the ones who take their own lives because of the pressures of the job",
+                "any other developed country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "And only 4 % of <u>the</u>_<u>countries</u> abide by the ILO recommendations and set the international labour standards of a maximum of 48 hours or fewer for the working week . \nWhat does the underline word \"the countries\" mention in this sentence?",
+            "choices": [
+                "38 countries",
+                "the Japanese language",
+                "longer hours than their richer counterparts",
+                "the ones who take their own lives because of the pressures of the job"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "One of <u>the</u>_<u>countries</u> without a limit is the United States . \nWhat does the underline word \"the countries\" mention in this sentence?",
+            "choices": [
+                "38 countries",
+                "longer hours than their richer counterparts",
+                "the Japanese language",
+                "Death by overwork"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In Europe , on the other hand , <u>all</u>_<u>countries</u> have maximum weekly hours , and only Belgium and Turkey have legal working hours of more than 48 hours . \nWhat does the underline word \"all countries\" mention in this sentence?",
+            "choices": [
+                "38 countries",
+                "lower and middle-income countries",
+                "South Korea",
+                "any other developed country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The average of 1,713 hours worked per year in Japan is not among the highest in the OECD list , but beyond the number , there is the grim reality that <u>the</u>_<u>country</u> has no legislation at all stipulating a maximum weekly hours limit and neither overtime limit . \nWhat does the underline word \"the country\" mention in this sentence?",
+            "choices": [
+                "any other developed country",
+                "Death by overwork",
+                "Japan",
+                "South Korea"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In more specific terms , the word means employees dying either from stress-related ailments ( heart attacks , strokes ) or the ones who take <u>their</u> own lives because of the pressures of the job . \nWhat does the underline word \"their\" mention in this sentence?",
+            "choices": [
+                "the ones who take their own lives because of the pressures of the job",
+                "a word for this",
+                "38 countries",
+                "South Korea"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "( Credit : Getty Images ) Death by overwork is so prevalent in Japan that they have a word for it : Karoshi ( Credit : Getty Images ) But <u>South</u>_<u>Korea</u> is not the only rich country to defy the odds . \nWhat does the underline word \"South Korea\" mention in this sentence?",
+            "choices": [
+                "South Korea",
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "the ones who take their own lives because of the pressures of the job",
+                "any other developed country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Japan has a problem with `` death by overwork '' , expressed not only by statistics but also the fact that <u>the</u>_<u>Japanese</u>_<u>language</u> has a word for this : karoshi . \nWhat does the underline word \"the Japanese language\" mention in this sentence?",
+            "choices": [
+                "the Japanese language",
+                "the OECD",
+                "Death by overwork",
+                "lower and middle-income countries"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The analysis covered 38 countries and showed that only Mexicans ( 2,225 hours/year ) and Costa Ricans ( 2,212 hours/year ) worked <u>longer</u>_<u>hours</u> . \nWhat does the underline word \"longer hours\" mention in this sentence?",
+            "choices": [
+                "longer hours than their richer counterparts",
+                "South Korea",
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "any other developed country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "South Koreans bucked a global trend : studies carried out by the International Labor Organization ( ILO ) show that lower and middle-income countries tend to work longer hours than <u>their</u> richer counterparts , thanks to a series of factors that range from the proportion of self-employed workers in the labour force to lower wages , job insecurity and cultural issues . \nWhat does the underline word \"their\" mention in this sentence?",
+            "choices": [
+                "lower and middle-income countries",
+                "the Japanese language",
+                "the ones who take their own lives because of the pressures of the job",
+                "the International Labor Organization -LRB- ILO -RRB-"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The average of 1,713 hours worked per year in Japan is not among the highest in the <u>OECD</u> list , but beyond the number , there is the grim reality that the country has no legislation at all stipulating a maximum weekly hours limit and neither overtime limit . \nWhat does the underline word \"OECD\" mention in this sentence?",
+            "choices": [
+                "the OECD",
+                "38 countries",
+                "South Korea",
+                "the International Labor Organization -LRB- ILO -RRB-"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "<u>Japan</u> has a problem with `` death by overwork '' , expressed not only by statistics but also the fact that the Japanese language has a word for this : karoshi . \nWhat does the underline word \"Japan\" mention in this sentence?",
+            "choices": [
+                "Japan",
+                "longer hours than their richer counterparts",
+                "the OECD",
+                "the ones who take their own lives because of the pressures of the job"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The average of 1,713 hours worked per year in <u>Japan</u> is not among the highest in the OECD list , but beyond the number , there is the grim reality that the country has no legislation at all stipulating a maximum weekly hours limit and neither overtime limit . \nWhat does the underline word \"Japan\" mention in this sentence?",
+            "choices": [
+                "Japan",
+                "Death by overwork",
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "any other developed country"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In the 2015-16 financial year , <u>the</u>_<u>government</u> registered a record 1,456 karoshi cases . \nWhat does the underline word \"the government\" mention in this sentence?",
+            "choices": [
+                "Japan",
+                "the ones who take their own lives because of the pressures of the job",
+                "Death by overwork",
+                "the OECD"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "<u>Japan</u> has a problem with `` death by overwork '' , expressed not only by statistics but also the fact that the Japanese language has a word for this : karoshi . \nWhat does the underline word \"Japan\" mention in this sentence?",
+            "choices": [
+                "Japan",
+                "South Korea",
+                "the Japanese language",
+                "Death by overwork"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "According to <u>ILO</u>_<u>'s</u> most recent figures , Asia is a continent where more people work the longest hours : most of the countries ( 32 % ) have no universal national limit for maximum weekly working hours and another 29 % have high thresholds ( 60 weekly hours or more ) . \nWhat does the underline word \"ILO 's\" mention in this sentence?",
+            "choices": [
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "any other developed country",
+                "the ones who take their own lives because of the pressures of the job",
+                "38 countries"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "And only 4 % of the countries abide by the <u>ILO</u> recommendations and set the international labour standards of a maximum of 48 hours or fewer for the working week . \nWhat does the underline word \"ILO\" mention in this sentence?",
+            "choices": [
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "Death by overwork",
+                "lower and middle-income countries",
+                "the OECD"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "( Credit : Getty Images ) Death by overwork is so prevalent in Japan that they have a word for <u>it</u> : Karoshi ( Credit : Getty Images ) But South Korea is not the only rich country to defy the odds . \nWhat does the underline word \"it\" mention in this sentence?",
+            "choices": [
+                "Death by overwork",
+                "the ones who take their own lives because of the pressures of the job",
+                "the OECD",
+                "the International Labor Organization -LRB- ILO -RRB-"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In more specific terms , <u>the</u>_<u>word</u> means employees dying either from stress-related ailments ( heart attacks , strokes ) or the ones who take their own lives because of the pressures of the job . \nWhat does the underline word \"the word\" mention in this sentence?",
+            "choices": [
+                "a word for this",
+                "South Korea",
+                "the International Labor Organization -LRB- ILO -RRB-",
+                "longer hours than their richer counterparts"
+            ],
+            "answer": "A"
+        }
+    ]
 }

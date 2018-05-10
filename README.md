@@ -1,4 +1,4 @@
-# Sakulish Objective Generator
+# Sakulish Objective Questions Generator
 
 To generate English objective questions from English materials with neural networks.
 
