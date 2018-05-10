@@ -6,7 +6,7 @@ Sakulish 就是 English 的意思，因为 Sakura 是樱花，Sakulish 就是嘤
 
 ## Project Document
 
-[https://hackmd.io/D9C-gD16Q6yTx8PrQBR3Og](https://hackmd.io/D9C-gD16Q6yTx8PrQBR3Og)
+[https://hackmd.io/s/S1hFM3ZAM](https://hackmd.io/s/S1hFM3ZAM)
 
 ## How to Run It with Docker
 
