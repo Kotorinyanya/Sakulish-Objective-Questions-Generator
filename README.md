@@ -1,4 +1,4 @@
-# BaiduAIProject
+# Sakulish Objective Generator
 
 To generate English objective questions from English materials with neural networks.
 
