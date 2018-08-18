@@ -18,7 +18,7 @@ from Paraphraser import Paraphraser
 
 class NLPMainHandler:
 
-    def __init__(self, file=None, string=None):
+    def __init__(self, file=None, string=None, url='http://localhost:9000'):
         """
         NLP main handler based on Stanford CoreNLP and emnlp2017-relation-extraction and Baidu API
         The input should be either string or file.
@@ -27,7 +27,7 @@ class NLPMainHandler:
         """
         # run Stanford CoreNLP server at localhost:9000
         # java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 100000
-        self.corenlp = StanfordCoreNLP('http://localhost:9000')
+        self.corenlp = StanfordCoreNLP(url)
         self.corenlp_properties = {
             'annotators': 'tokenize, pos, ner',
             'outputFormat': 'json'

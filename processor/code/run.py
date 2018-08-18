@@ -11,6 +11,7 @@ import random
 import re
 import html
 
+args = None
 
 def parse_arguments():
     """
@@ -24,6 +25,8 @@ def parse_arguments():
                         help="Specify Redis host address.")
     parser.add_argument("--port", action='store', default=6379, type=int,
                         help="Specify Redis host port.")
+    parser.add_argument("--core", action='store', default='http://core:9000', type=str,
+                        help="Specify core URL.")
     return parser.parse_args()
 
 
@@ -35,7 +38,7 @@ def process(text):
     :return:
     """
     questions = dict()
-    q = QuestionBuilder(string=text)
+    q = QuestionBuilder(string=text, url=args.core)
     raw_list = q.subjects
     for t, tc in raw_list.items():
         questions[t] = list()

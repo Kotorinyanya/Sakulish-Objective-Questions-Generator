@@ -9,7 +9,7 @@ from utils import sum_from_string, underline_word
 
 class QuestionBuilder:
 
-    def __init__(self, file=None, string=None):
+    def __init__(self, file=None, string=None, url='http://localhost:9000'):
         """
         Questiong builder based on NLP main handler.
         The input should be either file or string
@@ -18,9 +18,9 @@ class QuestionBuilder:
         """
         # input
         if file is not None:
-            self.nlp_handler = NLPMainHandler(file=file)
+            self.nlp_handler = NLPMainHandler(file=file, url=url)
         elif string is not None:
-            self.nlp_handler = NLPMainHandler(string=string)
+            self.nlp_handler = NLPMainHandler(string=string, url=url)
         else:
             raise Exception("QuestionBuilder input required!")
 
