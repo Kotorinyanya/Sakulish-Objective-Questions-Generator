@@ -6,9 +6,11 @@ from flask import flash
 from flask import request
 from flask import render_template
 from flask import abort
+from flask import jsonify
 from db import DB
 from helper import paginate
 from helper import text_to_html
+from helper import wiki_random
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.urandom(24)
@@ -43,6 +45,21 @@ def feed():
         else:
             flash("Success! New Text UUID: {}".format(uid), "success")
     return render_template("feed.html")
+
+
+@app.route("/feed/random", methods=["POST"])
+def feed_random():
+    try:
+        article = wiki_random()
+        uid = db.feed_text(article)
+    except Exception as e:
+        err = "An error occurred while add a random text: {}".format(e)
+        print(err)
+        flash(err, "danger")
+    else:
+        flash("Success! New Text UUID: {}".format(uid), "success")
+    finally:
+        return render_template("feed.html")
 
 
 @app.route("/")
@@ -91,6 +108,55 @@ def view_result(page):
 @app.route("/api")
 def view_api():
     return render_template("api.html")
+
+
+@app.route("/api/status")
+def get_status():
+    # Get count for show.
+    text_queue_count = db.get_text_queue_count()
+    result_set_count = db.get_result_set_count()
+    return jsonify({
+        "queue_size": text_queue_count,
+        "result_size": result_set_count,
+    })
+
+
+@app.route("/api/problems", methods=['GET'])
+def get_problems():
+    results = db.get_results(0, -1)
+    return jsonify(results)
+
+
+@app.route("/api/problems", methods=['DELETE'])
+def delete_problems():
+    db.delete_results()
+    return jsonify({
+        "ok": True
+    })
+
+
+@app.route("/api/problems", methods=['POST'])
+def add_article():
+    content = request.get_json(silent=True)
+    if not content or 'article' not in content:
+        return abort(400)
+    article = str(content['article'])
+    if not article:
+        return abort(400)
+    uid = db.feed_text(article)
+    return jsonify({
+        "uuid": uid
+    })
+
+
+@app.route("/api/problems/random", methods=['POST'])
+def random_article():
+    article = wiki_random()
+    uid = db.feed_text(article)
+    return jsonify({
+        "uuid": uid,
+        "article": article,
+    })
 
 
 if __name__ == "__main__":

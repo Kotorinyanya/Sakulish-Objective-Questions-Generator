@@ -1,21 +1,29 @@
 {% extends "framework.html" %}
 {% set active_page = "feed" %}
 {% block content %}
-  <div class="card">
-    <div class="card-body">
-      <h1 class="card-title">Feed me...
-        <small>with some text, manually.</small>
-      </h1>
-      {% include "flash.html" %}
-      <p class="card-text">Here you can push a text into process queue manually, to test whether the text processor
-        works properly.</p>
-      <form action="{{ url_for("feed") }}" method="post">
-        <div class="form-group">
-          <label for="feed-area">Feed Area:</label>
-          <textarea class="form-control" id="feed-area" rows="10" name="text"></textarea>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Feed me...
+                <small>with some text, manually.</small>
+            </h1>
+            {% include "flash.html" %}
+            <p class="card-text">Here you can push a text into process queue manually, to test whether the text
+                processor
+                works properly.</p>
+            <form action="{{ url_for("feed") }}" method="post">
+                <div class="form-group">
+                    <label for="feed-area">Feed Area:</label>
+                    <textarea class="form-control" id="feed-area" rows="10" name="text"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Feed</button>
+            </form>
+            <hr>
+            <h1 class="card-title">Or...
+                <small>have a random text from Wikipedia</small>
+            </h1>
+            <form action="{{ url_for("feed_random") }}" method="post">
+                <button type="submit" class="btn btn-primary">Feed a Random Text</button>
+            </form>
         </div>
-        <button type="submit" class="btn btn-primary">Feed</button>
-      </form>
     </div>
-  </div>
 {% endblock %}

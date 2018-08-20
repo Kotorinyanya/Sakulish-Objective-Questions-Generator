@@ -1,5 +1,52 @@
 {% extends "framework.html" %}
 {% set active_page = "api" %}
 {% block content %}
-<p>TODO: API Document</p>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">API Document</h1>
+            <p class="card-text">Usage of RESTful API. All parameters should be passed in JSON.</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Method</th>
+                    <th scope="col">URL</th>
+                    <th scope="col">Parameters</th>
+                    <th scope="col">Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">GET</th>
+                    <td><code>/api/status</code></td>
+                    <td>N/A</td>
+                    <td>Get status.</td>
+                </tr>
+                <tr>
+                    <th scope="row">GET</th>
+                    <td><code>/api/problems</code></td>
+                    <td>N/A</td>
+                    <td>Get all generated results.</td>
+                </tr>
+                <tr>
+                    <th scope="row">POST</th>
+                    <td><code>/api/problems</code></td>
+                    <td><code>article</code>: Content of article</td>
+                    <td>Feed an article.</td>
+                </tr>
+                <tr>
+                    <th scope="row">POST</th>
+                    <td><code>/api/problems/random</code></td>
+                    <td>N/A</td>
+                    <td>Feed a random article from library.</td>
+                </tr>
+                <tr>
+                    <th scope="row">DELETE</th>
+                    <td><code>/api/problems</code></td>
+                    <td>N/A</td>
+                    <td>Delete all generated results.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}

@@ -1,6 +1,9 @@
+import re
 import time
 import html
 from datetime import datetime as dt
+
+import requests
 
 
 def timestamp():
@@ -80,3 +83,12 @@ def paginate(this_page, page_count, url_prefix, show_page_count=5):
     for i in range(start_page, end_page):
         pages["links"].append({"page": i, "link": url_prefix + str(i)})
     return pages
+
+
+def wiki_random():
+    URL = "https://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json"
+    req = requests.get(URL)
+    result = req.json()["query"]["pages"]
+    article = result[list(result.keys())[0]]["extract"]
+    cleaner = re.compile('<.*?>')
+    return re.sub(cleaner, '', article)

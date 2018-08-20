@@ -50,6 +50,9 @@ class DB(object):
             return list()
         return results
 
+    def delete_results(self):
+        self.db.delete(["soq_results"])
+
     def get_text_queue_count(self):
         """
         Return the length of text queue.
