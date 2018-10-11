@@ -37,9 +37,12 @@ def process(text):
     :param text:
     :return:
     """
+    print("Start processing...")
     questions = dict()
+    print("Building questions...")
     q = QuestionBuilder(string=text, url=args.core)
     raw_list = q.subjects
+    print("Formatting...")
     for t, tc in raw_list.items():
         questions[t] = list()
         for s in tc:
@@ -60,11 +63,14 @@ def process(text):
 
 
 def main():
+    print("Start listening...")
     while True:
         # Get one task.
         task = db.get_text()
+        print("Get something...")
         if not task:
             continue
+        print("Get a text, len:", len(task["text"]))
         try:
             result = {
                 "uuid": str(uuid.uuid1()),
