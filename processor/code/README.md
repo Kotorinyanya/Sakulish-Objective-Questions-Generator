@@ -28,6 +28,7 @@ Based on [emnlp2017-relation-extraction](https://github.com/UKPLab/emnlp2017-rel
     ```
     > Note: Version of Java should be no higher than 8.
 5. Install [NLTK](https://www.nltk.org/install.html)
+6. Set the environment variable GOOGLE_APPLICATION_CREDENTIALS to the file path of the JSON file that contains your service account key.
 
 ## Requirements
 

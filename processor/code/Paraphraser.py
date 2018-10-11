@@ -5,7 +5,7 @@ import http.client
 import random
 from urllib import parse
 
-from googletrans import Translator
+from google.cloud import translate
 
 
 class Paraphraser:
@@ -14,9 +14,7 @@ class Paraphraser:
         self.baidu_appid = '20180503000153018'
         self.baidu_secretKey = 'IuYO63_t_xMc4h_qgTRZ'
 
-        self.google_translator = Translator(service_urls=[
-            'translate.google.cn'
-        ])
+        self.translate_client = translate.Client()
 
     def paraphrase_sentence_list(self, input_text_list):
         encoded_list, decoded_list = [], []
@@ -42,12 +40,14 @@ class Paraphraser:
 
     def decode(self, input_text):
         """
-        Decode text by Google Translate un-official API
+        Decode text by Google Translate API
         :param input_text:
         :return:
         """
-        decoded = self.google_translator.translate(input_text, dest='en')
-        return decoded.text
+
+        decoded = self.translate_client.translate(input_text)['translatedText']
+
+        return decoded
 
 
     def encode(self, input_text):

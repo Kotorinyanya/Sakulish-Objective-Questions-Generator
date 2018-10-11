@@ -17,3 +17,4 @@ sumy
 h5py
 googletrans
 redis
+google-cloud-translate
