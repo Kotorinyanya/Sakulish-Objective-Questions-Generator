@@ -4,6 +4,11 @@ To generate English objective questions from English materials with neural netwo
 
 Sakulish 就是 English 的意思，因为 Sakura 是樱花，Sakulish 就是嘤语
 
+## Preview
+
+![home](http://ww1.sinaimg.cn/large/006tNc79gy1g4lkrc87a6j30j60hm75e.jpg)
+![questions](http://ww2.sinaimg.cn/large/006tNc79gy1g4lkro5cp3j30j60hm75y.jpg)
+
 ## Project Document
 
 [https://hackmd.io/s/S1hFM3ZAM](https://hackmd.io/s/S1hFM3ZAM)
